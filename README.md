@@ -11,7 +11,9 @@ It's certainly possible for us to just sent the instructor a bunch of HTML files
 > 5. From within the project directory, add any changes: <p>`git add filename` or `git add .` for all files changed<p>
 > 6. Commit your changes so that they are staged for pushing (to the remote server): <p>`git commit -m "a message explaining what you did"`<p>
 > 7. Push you changes: <p>`git push`<p>
-> 8. Preview you changes at https://alexdeweert.github.io/seng310_earltech/index.html (or applicable html file)
+> 8. Preview you changes at https://alexdeweert.github.io/seng310_earltech/index.html (or applicable html file)<p>
+> 9. IF YOU'RE A GIT BEGINNER: I highly recommend, before you start to edit any files, do a git pull, to make sure you have all the updated changes to master remote branch. Otherwise you might have to deal with merge conflicts.<p>
+> 10. If you're more advanced: It might be a good idea to do branching and pull requests.
 
 #### Make changes live under the team URL
 ###### I should preface this by saying: this part isn't necessarily required, but I just didn't want to send the instructor the github site link with just one name attached to it. So instead, we have earl-technologies.surge.sh
