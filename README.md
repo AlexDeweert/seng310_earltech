@@ -6,10 +6,10 @@ Instead, let's publish the content here to a static site hosting service. I've h
 quite rad. Okay here's how you can get going on this:<br>
 
 > 1. Create a Github account. If you already have one, please send AlexDeweert your username so I can add you as a collaborator.
-> 2. Install git on your machine (if you don't already have it) https://www.atlassian.com/git/tutorials/install-git.
+> 2. Install git on your machine (if you don't already have it) https://www.atlassian.com/git/tutorials/install-git
 > 3. Clone the group project with: <p>`git clone https://github.com/AlexDeweert/seng310_earltech`<p>
 > 4. Make any changes to the project files as you deem necessary.
 > 5. From within the project directory, add any changes: <p>`git add filename` or `git add .` for all files changed<p>
 > 6. Commit your changes so that they are staged for pushing (to the remote server): <p>`git commit -m "a message explaining what you did"`<p>
 > 7. Push you changes: <p>`git push`<p>
-> 8. Preview you changes at https://alexdeweert.github.io/seng310_earltech/
+> 8. Preview you changes at https://alexdeweert.github.io/seng310_earltech/index.html
