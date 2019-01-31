@@ -1,58 +1,28 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <!-- user requirements, using html template from usability goals, added some header modifications -->
-  
-	<title>User Requirements</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>The software should accomplish the following for the specific stakeholder/user</h1>
-    <h2>Usability Goal</h2>
-    <ol type="I">
-        <li>
-            <h3>Student:</h3>
-            <br>
-            <p>Either a student user or parent would like to flawlessly pinpoint classroom locations, and organize their schedule based on a dynamic map that may change with a potentially changing course lineup.
-                    A student or course advisor would like the ability to swap or drop courses without major scheduling errors or unforeseen repercussions.
-                    </p>
-        </li>
+//A requirement is a statement about an intended product that specifies what it //should do or how it should perform
+//A user requirement is what the project should be able to do.
 
-        <li>
-            <h3>Efficiency:</h3>
-            <p> A student user would like routes to their next class to be optimized in terms of travel-time, but not necessarily distance say. For example, if the shortest path is congested with students during the busiest end-of-class times, the path would be the least congested, possibly longer than the shortest distance, but still travel time optimal.
-                </p>
-            <p>A student or University faculty member, such as a course advisor, would like the CalendarCompanion to carry out tasks in a fast an efficient manner. Students would like speed for obvious reasons, but the faculty member has a busy schedule and deals with many students every day, so program time efficiency is paramount.
-                </p>
-            <p>A university faculty member from another university would like the ability to efficiently create transfer or exchange friendly course mappings in a time efficient and painless way.
-                </p>
-        </li>
-        <li>
-            <h3>Utility:</h3>
-            <p>The student user would like to have access to a suite of features that, while normally available through brute force Coursespace navigation, are available through a centralized CalendarCompanion application, easily accessible and integrated.
-                </p>
-            <p>University faculty members would like the ability to add or remove course offerings.
-                </p>
-            <p>University faculty members would like the ability to add additional lecture sections based on waitlist numbers.
-                </p>
-            <p>A parent would like to have the ability to check their child-students grades and transcripts.
-                </p>
-            <p>A parent would like to have access to course reviews, professor reviews, and past course averages to ensure that child-students get the best education possible.
-                </p>
-        </li>
-        <li>
-            <h3>Learnability:</h3>
-            <p> A new student user who might feel overwhelmed by the beginning of their University experience would like a basic tutorial to assist with learning a centralized and integrated tool such as CalendarCompanion.
-                </p>
-        </li>
-        <li>
-            <h3>Memorability:</h3>
-            <p>A student user, after learning to use CalendarCompanion for the first time, would like to have memorable icons, and non-overwhelming button designs or complex button naming conventions.
-                </p>
-            <p>
-                A student user would like to have the ability to go through the tutorial system again, or to have access to a hover-and-help pointer option to get more information about what a button or menu item does.
-            </p>
-        </li>
-    </ol>
+The software will do the following for the specific stakeholder/user
 
+Student:
+1) Log in to coursespaces account on mobile or desktop and navigate to CalendarCompanion for access, creating a unique CalendarCompanion account for the user.
+2) Allow student to configure desired degree map/schedule through multiple ways.
+	-The student may chat and provide details (faculty, preferred Graduating Year, number of courses per semester) to the Virtual Assistant to automatically compile a chronological sequence of semesters based on user preferences. 
+	-Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.
+	-The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term. This can be done through toggling data fields while designing their degree map. Additionally, courses booked online or through exchange will also be recognized by the CalendarCompanion
+	-The software then displays each semester the user has designed intuitively through multiple data representations (graphs, pie charts, interfaces, map of UVIC).
+3)By saving the desired degree schedule/map, CalendarCompanion will notify the student and remind them before course registration begins, reminding them to sign up for their respective planned term courses.
+4)For international students, the CalendarCompanion provides multiple languages.
+5)If a course is full, the CalendarCompanion may recalibrate your degree map in order to graduate as efficiently as possible
+6)If a course is deemed terminated for a specific degree requirement, notify the students to update their schedule/degree map
+7)The software is able to determine if degree requirements are not fulfilled within a degree map/schedule. Students will be notified to make immediate changes.
+8)If a student accidentelly deletes a course by accident, there is an undo button to revert to the previous degree map
+9)If a student deletes a mandotary pre/co-requisite to another course, a border will apply to said course with a message deeming that they must complete a specific pre/co-requisite before enrolling in said class.
 
-</body></html>
+Administration (UVIC staff, faculty, professors):
+1)Log in to coursespaces account on mobile or desktop and navigate to CalendarCompanion for access, creating an administrative CalendarCompanion account.
+2)Update new courses and lecture sections for students to select from throughout the years. Fill in all data fields relevant to the courses updated so that the users (students) may have optimal course selection.
+3)Delete future courses/sections if deemed that the course is dropped from the university itself.
+
+Parents
+1)Log into the CourseCalendar using V number of specified child and monitor course map and transcripts
