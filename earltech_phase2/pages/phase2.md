@@ -73,7 +73,10 @@ categories: phase2
             </ol>
         <li><a href = "#student_finances">Student Finances</a></li>
             <ol style = "list-style-type: upper-alpha">
+                <li><a href = "#tuition_and_account_balance">Tution and Bank Account</a></li>
+                <li><a href = "#one_card_account">One Card Account</a></li>
                 <li><a href = "#link_bank_account">Link Bank Account</a></li>
+                <li><a href = "#make_payment">Make Payment</a></li>
             </ol>
         <li><a href = "#user_account">User Account</a></li>
         <li><a href = "#help">Help</a></li>
@@ -111,71 +114,82 @@ categories: phase2
             </li>
             &nbsp;<br>
             <li><a href = "#my_degree_maps">My Degree Maps</a>
-            <br>
+            <br>This section affords a user the ability to create and view a map of their degree. In other words, a map is a sequence of courses that a student must take in order to reach the desired degree graduation goal.
             &nbsp;<br>
             </li>
         </ol>
     <li><a href = "#details">Study Assistant</a>
-    <br>
-    <br>sdas
+    <br>The Study Assistant page is parent to all components that are related to what a user might expect to find in a typical study assistant application. Such components as alarms, tips an tricks, reminders, and checklists are submenus to this page.
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
             <li><a href = "#assignment_alarm">Assignment Alarm</a>
-            <br>
+            <br> TODO: Brendan
             </li>
             &nbsp;<br>
             <li><a href = "#study_tips_and_tricks">Study Tips and Tricks</a>
-            <br>
+            <br> TODO: Brendan
             </li>
             &nbsp;<br>
             <li><a href = "#test_reminders">Test Reminder</a>
-            <br>
+            <br> TODO: Brendan
             </li>
             &nbsp;<br>
             <li><a href = "#todo_check_list">Todo/Check List</a>
-            <br>
+            <br> TODO: Brendan
             </li>
             &nbsp;<br>
         </ol>
     <li><a href = "#map">Map</a>
-    <br>
+    <br>One of the most significant features of the CalendarCompanion application is campus map navigation. This section is navigated to based on the main menu item “Map”. It can also be selected from “Find Class Room” in the “Course Schedule” section, or by requesting it from the Virutal Assistant.
     </li>
     &nbsp;<br>
     <li><a href = "#school_events">School Events</a>
-    <br>
+    <br>One of the factors that greatly affect a student's performance at university is their social life. Moreover, social development at this stage is a student's life is key to their success in the workplace. This part of the application keeps a student apprised of up-to-date news around campus. In this feature, all academic events, social events, and campus news are uploaded to the student's School Events feed everyday.
     </li>
     &nbsp;<br>
     <li><a href = "#find_my_prof">Find My Prof</a>
-    <br>
+    <br>Here we have the Find My Prof section which allows a student to search a professor by name and by institution. This section acts as a parent to two other sections. The results of a search on this page can be utilized in the child sections "Contact Info and Office Hours" and "Professor Ratings".
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
             <li><a href = "#contact_info_and_office_hours">Contact Info and Office Hours</a>
-            <br>
+            <br>Here we have the “Find Professor Contact Information and Office Hours” section of the application. This section is navigated to based on the main menu item “Find My Prof”. This section can also be gotten to based on a suggestion from the Virtual Assistant. This is basically the results page of a professor search based on the parent section, "Find My Prof".
             </li>
             &nbsp;<br>
             <li><a href = "#professor_ratings">Professor Ratings</a>
-            <br>
+            <br>This is another child component under the "Find My Prof" section. This section allows a user to view all professor ratings based off of the search results from Find My Prof. A list of professor ratings are present in this section, and can be sorted by list entry detail. For example, if every list entry contains an entry-rating (other students can agree or disagree with the professor rating), a course number, a grade provided, a user can organize the list based on those details.
             </li>
             &nbsp;<br>
         </ol>
     <li><a href = "#student_finances">Student Finances</a>
-    <br>
+    <br>For this portion of the application, the student may view financial information such as outstanding tuition payments, current personal account balance, linking a bank account to the personal CaldenarCompanion account, or depositing funds into the CalendarCompanion account with a credit card.
     </li>
     &nbsp;<br>
-        <ol style = "list-style-type: upper-alpha">
+    <ol style = "list-style-type: upper-alpha">
+            <li><a href = "#tuition_and_account_balance">Tuition and Account Balance</a>
+            <br> TODO: Alex
+            </li>
+            &nbsp;<br>
+            <li><a href = "#one_card_account">ONECard Account (or similar)</a>
+            <br> TODO: Alex
+            </li>
+            &nbsp;<br>
             <li><a href = "#link_bank_account">Link Bank Account</a>
-            <br>
+            <br> TODO: Alex
+            </li>
+            &nbsp;<br>
+            <li><a href = "#make_payment">Make Payment</a>
+            <br> TODO: Alex
             </li>
             &nbsp;<br>
         </ol>
     <li><a href = "#user_account">User Account</a>
-    <br>
+    <br>jkhs
     </li>
     &nbsp;<br>
     <li><a href = "#help">Help</a>
-    <br>
+    <br>dsfsd
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
@@ -296,8 +310,26 @@ Ut mollis turpis non fringilla mollis. Donec tincidunt est ut magna sodales impe
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+<div id = "tuition_and_account_balance">
+tuition_and_account_balance
+Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<a href = "#top">[top]</a>
+</div>
+&nbsp;<br>
+<div id = "one_card_account">
+one_card_account
+Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<a href = "#top">[top]</a>
+</div>
+&nbsp;<br>
 <div id = "link_bank_account">
 link_bank_account
+Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<a href = "#top">[top]</a>
+</div>
+&nbsp;<br>
+<div id = "make_payment">
+make_payment
 Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
 <a href = "#top">[top]</a>
 </div>

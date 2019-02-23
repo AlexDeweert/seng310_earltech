@@ -4,7 +4,7 @@
 title: Home
 layout: default
 ---
-<center><img src = "./earllogo.png" /></center>
+<center><img src = "./earllogo_alt.png" /></center>
 
 
 Welcome to the Earl Technologies project website.
