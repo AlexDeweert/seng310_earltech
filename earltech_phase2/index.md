@@ -2,8 +2,10 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: Home
-layout: home
+layout: default
 ---
+<center><img src = "./earllogo.png" /></center>
+
 
 Welcome to the Earl Technologies project website.
 This is the home for assignment posts and project information for the University of Victoria SENG 310 course during Winter 2019.
@@ -16,4 +18,5 @@ Brendan Ciccone: V00871008<br>
 Daniel Dubichev: V0877776<br>
 Alex Deweert: V00855767
 
-# [Phase 1]({% link pages/2019-02-14-phase1.md %})
+# [Phase 1 : Requirements Gathering]({% link pages/phase1.md %})
+# [Phase 2 : Design]({% link pages/phase2.md %})
