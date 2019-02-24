@@ -5,7 +5,7 @@ date:   2019-02-23 09:00:00 -0800
 categories: phase2
 ---
 
-<center><img src = "../../earllogo_alt.png" /></center>
+<center><img src = "../earllogo_alt.png" /></center>
 
 # Phase 2: Design
 
