@@ -574,6 +574,13 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 &nbsp;<br>
 
 
+
+
+
+
+
+
+
 <div id = "study_tips_and_tricks">
 <div markdown = "1">
 ## Study Tips and Tricks
@@ -589,6 +596,14 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
 
 
 <div id = "test_reminders">
@@ -608,6 +623,13 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 &nbsp;<br>
 
 
+
+
+
+
+
+
+
 <div id = "todo_check_list">
 <div markdown = "1">
 ## Checklists and Todolists
@@ -623,6 +645,13 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
 
 
 <div id = "map">
@@ -643,6 +672,14 @@ The second sub-function is having the calendar symbol, which allowed student to 
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
 
 
 <div id = "school_events">
@@ -667,84 +704,200 @@ By doing this, we can not only assist users with study but also provide them an 
 &nbsp;<br>
 
 
+
+
+
+
+
+
+
+
+
 <div id = "find_my_prof">
 <div markdown = "1">
+
 ## Find My Prof
+
 ### Design Decisions and Rationale
+For the “Find My Professor Contact Information and Office Hours” model, we are utilizing the very common design pattern of text box entry and button press. This is a very simple page so the design doesn't necessarily fit a specific interface metaphor, nor is it inspired from another design specifically. However, this is intuitively a common user interface design pattern about which most users have intuitive knowledge and an implicit understanding. The widgets utilized in this section are a hamburger style menu button, search buttons, text entry buttons.
+
 ### Requirement from Phase 1
+A requirement from Phase 1 user profile for “Bob” states that he likes to make weekly schedules: <a href = "../content/phase1/2019-02-19-userprofiles.html" target = "_blank">Phase 1: Paragraph 1 - "Bob(Student)"</a>. Meeting this requirement requires the user to become aware of their professors office hours, location, and contact information. This component and it's children component (Results) covers, in part, the requirement by providing Bob with such information.
+
+
 ### Low Fidelity Prototype
 <center><img src = "./images/FindMyProfSearch.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+To begin, a user would have navigated here from the main menu button “Find My Prof”. Once on the page, the user will notice two text fields. One for the school name, and one for the professor name. The student will also notice the main menu hamburger button on the top left. And finally, a “search” button will be visible at the bottom of the screen under both text entry fields. The search button will not be clickable since both text fields are empty. The button only becomes active once there is text in both fields.
+
+A user should be able to click on the text-box to enter a their school name. A software keyboard will pop up from the bottom of the screen after the user clicks the text field. While they are typing in the school name, a background search of possible matches will be taking place, presenting the student with known options that best match what they have typed in so far. A user should be able to select from one of the options that pop up in the matched box, or should be able to press the keyboard enter button to exit the text entry, preserving the text saved so far so that they can move on to entering text in the professor’s name field.
+
+The professor’s name field should behave in a similar manner to the school name field. Should a matching name exist in the database for that school and professor, an option will pop up allowing the student to select from matches so far. If that professor doesn’t exist, or a match cannot be found based on the field, the user can press enter which will allow the user to exit from the text entry. Once exited, the search button at the bottom of the screen will become active.
+
+The user should be able to click the search button, and the application will then display a waiting icon of some kind, after which the results screen will pop up. The results screen will simply consist of two text boxes which display any found information about the professor at that school. The user has the option to click the “search again” button, which will take the user back to the previous screen. There is also the option of clicking the main hamburger button menu at the top left.
+
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
+
+
 
 
 <div id = "contact_info_and_office_hours">
 <div markdown = "1">
+
 ## Professor Contact and Office Hours
 ### Design Decisions and Rationale
+Here we have an extremely simple results display section. The design of this component was quite simply inspired by the ability to view separate pieces of information on the same page without the user being confused about where the informaiton was separated or not. The design looks like two post-it notes, which might be a basic interface metaphor.
+
+The widgets utilized in this section are, of course, the menu icon on the top left, clickable buttons, and a text display results window that a user may highlight and copy.
+
 ### Requirement from Phase 1
+A requirement from Phase 1 user profile for “Bob” states that he likes to make weekly schedules: <a href = "../content/phase1/2019-02-19-userprofiles.html" target = "_blank">Phase 1: Paragraph 1 - "Bob(Student)"</a>. Meeting this requirement requires the user to become aware of their professors office hours, location, and contact information. This component and it's parent component (FindMyProf) covers, in part, the requirement by providing Bob with such information.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/FindMyProfResults.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+The menu in the top left corner, when clicked, should slide out the main navigation menu that should display the main menu with submenus, similar to the <a href = "#top">"hierarchical overview"</a> section above. The two text boxes display results information of the FindMyProf search results on the parent component. The results text boxes will display information as depicted in the prototype. The text in those boxes will be clickable, and copy-able. A button on the bottom screen, if clicked, will take a user back to the FindMyProf parent component.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
+
 
 
 <div id = "professor_ratings">
 <div markdown = "1">
+
 ## Professor Ratings
 ### Design Decisions and Rationale
+The design of this portion was inspired by an amalgamation of two popular websites, Reddit.com and RateMyProfessor.com. Reddit has a popular upvote and downvote system in order for the user community to validate eachothers commenting. RateMyProfessor allows students to make informed decisions on what to expect when signing up for a course with a particular professor.
+
+The interface metaphors for this portion of the design include: the well known hamburger menu visible at the top left of the screen, the upvote and downvote system for forum based websites or mobile applications, and the list result sorting system common with many applications based on search results. All of these designs are based on well known applications such as Reddit, for the upvote and downvote system. The metaphor here is that of the diplomatic voting system. The menu widget and sorting widget are just common design patterns.
+
+Widgets will include clickable buttons, search boxes, scrollable results sections, a list sorting option menu, upvote and downvote buttons for list items.
+
+
 ### Requirement from Phase 1
+Based on Phase 1 requirement, “a parent would like to have access to course reviews, professor reviews, and past course averages to ensure that child-students get the best education possible” under <a href = "../content/phase1/2019-02-19-usabilitygoals.html" target = "_blank">Phase 1: Usability Goals - Paragraph 3 - Subparagraph 5</a>, this components meets the requirement by allowing a user to search for professor information. The user is then presented with a results page that can be sorted. The user can enter a new review, or create an entry for a professor that is not yet located within the database. Not only would parent benefit from this feature (per the Phase 1 requirement) but clearly, this component has students in mind. Although this requirement was not specifically mentioned in Phase 1, it is certainly implied.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/RateMyProf.png" width = "100%" height = "100%"/></center>
+
 ### Behavior
+The design will allow a user to search the professor name and school, the result set will be displayed first by an average rating, and the mode of professor characteristics. For example, tough marker, tough assignments, takes attendance, easy tests, hard tests, would take again, etc. A list of chronologically sorted ratings based on most recent first will also be displayed. All list results will be presented within a scrollable portion of the screen, with buttons for sorting on top, or a rating submission on top as well.
+Each list entry will contain a rating value from between 1-5, a comments section, a checkbox section indicating which characteristics of that professor were selected.
+
+Each list entry will contain an agreement/disagreement rating system. That way, reviews which do not reflect the opinion of other students can be disregarded as a less-common / inaccurate representation. If a user clicks the "up" arrow on any of the comments, the count will be incremented by one. If the user clicks the "down" arrow, the count will be decremented by one. The count can be any value in the range of [-MAX_INT, +MAX_INT].
+
+Buttons at the top of the list will include: sort by button with a “sort” label. The options under a pop-up menu will include sorting options such as number of ratings, most agreements, most disagreements, course type, or date. A user who clicks this button will see a sort menu brought into focus and slide down from the button. The widgets and background behind the menu will slightly fade out with a transparent grey overlay, focusing the users attention on the pop-down menu. The user can select from one of the options, and the results list will be sorted according to that option.
+
+Although not displayed on the prototype, a button will be available for a student to click titled "Post a Rating". This button will be in the bottom middle of the screen, just above the "Search Again" back button. If clicked, this button will bring a student to a new page. The new page will contain a 
+"comments" text field in the middle of the screen. Above that text box will be checkboxes that contain "tags". These tags are common attributes that are characteristic of the users experince with that particular prof. A "course taken" text field will be below the "tags" portion. This text field will contain the course number that the student had taken with that professor and on what date. There will also be a button with an uparrow and downarrow that, when clicked, will change a displayed "Rating" value to values between 1-5 in increments of 0.1. Finally, at the bottom of the screen, there will be a submit button. BEFORE SUBMITTING: The sytem MUST check to ensure that the user in question had in fact taken the course with that professor, in a time period in the past. In that way, the system avoids the ratings sytem to be overwhelmed with "troll" ratings.
+
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
 
 
 <div id = "student_finances">
 <div markdown = "1">
+
 ## Student Finances
+
 ### Design Decisions and Rationale
+This component was designed with a central payment and finances hub in mind, similar to that of a mobile banking application. A quick-view text box widget will display a useful summary of user finances. The user would have access to all other Student Finances components from this central view. For that, we included four buttons at the bottom for navigation.
+
 ### Requirement from Phase 1
+Based on a requirement, “a user will be able to manage their payments to the University”, <a href = "../content/phase1/2019-02-14-introduction.html" target = "_blank">Phase 1: Introduction - Paragraph 1 last sentence</a>, the requirement implies that a student will have control over financial accounts that are linked to UVic, including tuition, and Onecard (or similar service in the case where the app isn’t at UVic). Here we show how the requirement for a payment and account utility is met by this component, and its child components "Tution and Account Balance", "ONECard Account", "Link Bank Account", and "Make Payment".
+
 ### Low Fidelity Prototype
 <center><img src = "./images/StudentSpending.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+The top left menu button will behave in a similar manner to the other sections. The top right help button, the question mark icon, will change make it so subsequent clicks on the other components of the user interface in this section display text which describes its functionality: if the Quickview text area is clicked then display "A summary of user finances"; if the buttons are clicked then display text which describes the function of the page that clicking the button will take the user to. The bottom buttons will be organized in a manner similar to what is observable in the prototype. A back button on the botto middle will navigate the user back to the parent component, which is the home screen.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
 
 
 <div id = "tuition_and_account_balance">
 <div markdown = "1">
+
 ## Tuition and Account Balance
+
 ### Design Decisions and Rationale
-### Requirement from Phase 1
+The navigation buttons on the bottom of this screen will persist between the parent component "Student Finances" (User Finances on the prototype), and the sibling component "ONECard Account". The decision here was made in order to enhance the central payment and finances hub feeling, similar to a mobile banking application. In those applications we see a persistence of commonly used navigation buttons, especially when jumping between screens to update amounts to deposit, or amounts to pay. The widgets in this section include all of the buttons mentioned in the parent component, and an information text field, but with the included pop down menu at the bottom of the informations screen. This is visible in the prototype.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/TuitionAndAccountBalance.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+The top left menu bar, and top right help buttons behave in a similar manner to that of the parent component. Except the help button tooltip clicks will display: for the "Tuition Statement" section "Details of your UVic (or similar) tuition account"; for the "change term" button at the bottom of the Tuition Statement text field "Select the term from which to display your tuition payments summary"; for the bottom four navigation buttons, display to the user the function of the page to which the user would be taken to if the button was clicked. The buttons take the user to the component described on the button text, which is self explanatory. Finally, the back button takes the user to the parent component.
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
 
 
+
+
+
+
 <div id = "one_card_account">
 <div markdown = "1">
+
 ## ONECard Account (or similar)
+
 ### Design Decisions and Rationale
-### Requirement from Phase 1
+The design of this section was very similar to the parent component "Student Finances" (or User Finances in the prototype). The interface metaphors and widgets are nearly identical. The only difference is that the information displayed in the central text box is different.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/OneCardAccount.png" width = "45%" height = "45%"/></center>
+
 ### Behavior
+The only ways that this component screen differs in behavior from that of the parent component, is that the text box tooltip information for the help button changes the message displayed to the user as "Displays the most recent user activity for your one card account, including all recent transactions, deposits, and withdrawals and details like date and time of the transaction". The text in this box can be clicked, hightlighted, and copied. The button "ONECard Account" will not be inactive and unclickable since the user is already navigated to this section. Other than that, the behavior is similar to the parent component.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -753,12 +906,20 @@ By doing this, we can not only assist users with study but also provide them an 
 
 <div id = "link_bank_account">
 <div markdown = "1">
+
 ## Link Bank Account
+
 ### Design Decisions and Rationale
-### Requirement from Phase 1
+Although this component is a child of the Student Finances parent component, which acts as a central hub similar to a mobile application banking experience, this page moves away from that motivation slightly. Since this page is specifically for linking an outside bank account, we wanted to give the user a sense that the bank account linking was being done on an outside account. This decision serves to highlight the fact that linking an outside bank account to a 3rd party application such as CalendarCompanion is a potential security risk. The design of this page is similar to that of many bank account linking interfaces, common in many payment applications.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+The top left menu functions in a similar way to the parent and sibling components. The help button tooltips will display: for "Choose Financial Institution" pop down menu "Pick a bank account in which you have an active account with funds in it"; for the icon below the pop down menu "this is an icon that displays the logo of your chosen financial institution"; for the "Account Number" text field "This is the account number that you use to log in to online banking, please contact your financial institution to obtain this number"; for the "password" text field "this is the password you use to log in to your online banking - CalendarCompanio does not store this information on it's database! A CalendarCompanion employee would never ask you for this information"; for the "Link" button "By clicking this you agree to log in to your chosen financial institution and allow CalendarCompanion application to withdraw funds with your permission".
+
+When a uesr clicks on "Choose Financial Institution" button, a pop down menu displays to user a list of links that they can click on to select their financial institution of choice. Once selected, a logo for that bank will be displayed. The users decision will be cached for future use, but not their password. A user cannot click the "Link" button unless both Account Number and Password fields are filled in. Once clicked, the Link button will begin the bank account linking process [this might require special set up and permissions from the financial institution or third party banking libraries or API]. The labels and widget positioning will be in a manner that conforms to the prototype.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -767,12 +928,16 @@ By doing this, we can not only assist users with study but also provide them an 
 
 <div id = "make_payment">
 <div markdown = "1">
+
 ## Make Payment
+
 ### Design Decisions and Rationale
-### Requirement from Phase 1
+
 ### Low Fidelity Prototype
 <center><img src = "./images/MakePayment.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+
 </div>
 <a href = "#top">[top]</a>
 </div>
