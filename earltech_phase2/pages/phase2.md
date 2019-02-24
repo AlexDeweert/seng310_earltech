@@ -229,7 +229,7 @@ Low Fidelity Prototype
 Behavior -->
 
 
-<div id = "design_details">
+<div id = "details">
 <div markdown = "1">
 # Design Details and Specifics
 </div>
@@ -268,12 +268,18 @@ Not visible in the login prototype, a Parent or Adminstration mode switch can be
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
 
 
+---
 
+
+&nbsp;<br>
 
 
 
@@ -295,11 +301,16 @@ The behavior of this component is quite simple. A user clicks one of the buttons
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
 
+---
 
+
+&nbsp;<br>
 
 
 
@@ -357,12 +368,16 @@ At the bottom of the scrolling list users will encounter a button widget which r
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
 
+---
 
 
+&nbsp;<br>
 
 
 
@@ -403,12 +418,15 @@ Tapping on a course will expand a pop up window that expands to provide even mor
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
+---
 
 
-
+&nbsp;<br>
 
 
 <div id = "create_a_degree_map">
@@ -507,13 +525,15 @@ Button [Create then save the degree map titled *user entered degree map from pag
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
+---
 
 
-
-
+&nbsp;<br>
 
 <div id = "my_degree_maps">
 <div markdown = "1">
@@ -546,11 +566,16 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
 
+---
 
+
+&nbsp;<br>
 
 
 
@@ -569,122 +594,175 @@ Whether a user is stuck navigating through the application or is having trouble 
 <center><img src = "./images/StudyAssistantMain.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
+The main page of the study assistant provides 3 sub directories: 
+
+- Check List / To-Do List
+  - Provides a space where the student can get tasks pertaining to their courses, and make custom tasks. 
+  - A blue refresh circle will appear beside this directory if instructors have sent a new recommended task for students to do.
+- Tests and Assignments
+  - Students can view this directory to keep track of all the assignments they have currently been assigned in each course.
+  - A yellow warning symbol will appear if an assignment that has not been marked as “done” is due very soon.
+- Studying Tips and Tricks
+  - Students can visit this space to find some study tips recommended by students or by professionals.
+
 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
-
-
-
-
-<div id = "assignment_alarm">
-<div markdown = "1">
-## Assignment Alarm
-### Design Decisions and Rationale
-**TODO Brendan**
-### Requirement from Phase 1
-**TODO Brendan**
-### Low Fidelity Prototype
-<center><img src = "./images/StudyAssistantAlert.png" width = "35%" height = "35%"/></center>
-### Behavior
-**TODO Brendan**
-</div>
-<a href = "#top">[top]</a>
-</div>
 &nbsp;<br>
-
-
-
-
-
-
-
-
-
-<div id = "study_tips_and_tricks">
-<div markdown = "1">
-## Study Tips and Tricks
-### Design Decisions and Rationale
-**TODO Brendan**
-### Requirement from Phase 1
-**TODO Brendan**
-### Low Fidelity Prototype
-<center><img src = "./images/StudyAssistantTips1.png" width = "35%" height = "35%"/>
-<img src = "./images/StudyAssistantTips2.png" width = "35%" height = "35%"/></center>
-### Behavior
-**TODO Brendan**
-</div>
-<a href = "#top">[top]</a>
-</div>
-&nbsp;<br>
-
-
-
-
-
-
-
 
 
 
 <div id = "test_reminders">
 <div markdown = "1">
-## Test and Assignment Reminders
+## Test and Assignments (with Alarm)
+
 ### Design Decisions and Rationale
-**TODO Brendan**
-### Requirement from Phase 1
-**TODO Brendan**
-### Low Fidelity Prototype
-<center><img src = "./images/StudyAssistantTestAssign1.png" width = "35%" height = "35%"/>
-<img src = "./images/StudyAssistantTestAssign2.png" width = "35%" height = "35%"/></center><br>
-<center><img src = "./images/StudyAssistantTestAssign3.png" width = "35%" height = "35%"/>
-<img src = "./images/StudyAssistantTestAssign4.png" width = "35%" height = "35%"/></center>
-### Behavior
-**TODO Brendan**
+This particular section and it's child component subsections were ones in which a lot of information would potentially be available to the user at any one time. The scrolling widget was needed for many components in order to fit it all into one location. Pop-up dialogs are very important for the reminders and alarm functions as well. No particular interface metaphor was followed here, apart from those implicit in everyday GUI design inherited from the pioneers of iOS, Android, etc and their progenitors.
+
+### Low Fidelity Prototype (Part 1)
+<center><img src = "./images/StudyAssistantTestAssign1.png" width = "35%" height = "35%"/></center>
+
+### Behavior (Part 1)
+
+This space lets students know what assignments they are currently assigned, and what tests to keep an eye out for. 
+
+Each assignment is shown underneath the name of the course it corresponds to.
+New assignments, when posted by the instructor, are automatically visible on this page, and marked with a blue star.
+Assignments that are close to their due date have a yellow warning symbol next to them with the due date in red text.
+
+At any time, the student can click on the symbol next to the assignment at this menu and mark it as done. It’s up to them to be honest. They can also revert an assignment marked as “done” back to “not done” 
+
+&nbsp;<br>
+&nbsp;<br>
+
+### Low Fidelity Prototype (Part 2)
+<center><img src = "./images/StudyAssistantTestAssign2.png" width = "35%" height = "35%"/></center>
+
+### Behavior (Part 2)
+The tests are below this category, and show when the test is taking place on.
+Each test or assignment can be clicked on to expand its details.
+
+&nbsp;<br>
+&nbsp;<br>
+
+### Low Fidelity Prototype (Part 3)
+<center><img src = "./images/StudyAssistantTestAssign3.png" width = "35%" height = "35%"/></center>
+
+### Behavior (Part 3)
+Inside assignment details are more information about how the student should go about doing the assignment. These notes are provided by the instructor. Below these notes is a button that can provide a link to help. It will direct them study tips and tricks, and show tips relevant to assignments.
+
+
+&nbsp;<br>
+&nbsp;<br>
+
+
+### Low Fidelity Prototype (Part 4)
+<center><img src = "./images/StudyAssistantTestAssign4.png" width = "35%" height = "35%"/></center>
+
+### Behavior (Part 4)
+Inside test details are more information about the test material, and where the test will be held. This is all provided by the instructor. Below these notes is a button that can provide a link to help. It will direct them study tips and tricks, and show tips relevant to preparing for tests.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+&nbsp;<br>
+&nbsp;<br>
+
+
+<div id = "assignment_alarm">
+<div markdown = "1">
+
+## Assignment Alarm
+
+### Low Fidelity Prototype
+<center><img src = "./images/StudyAssistantAlert.png" width = "35%" height = "35%"/></center>
+
+### Behavior
+If a test or assignment is nearing its due date, an alert will appear on the users phone that tells them which assignment or test is drawing near.
+</div>
+<a href = "#top">[top]</a>
+</div>
+
+
+
+
+&nbsp;<br>
 &nbsp;<br>
 
 
 
+<div id = "study_tips_and_tricks">
+<div markdown = "1">
+
+## Study Tips and Tricks
+
+### Low Fidelity Prototype
+<center><img src = "./images/StudyAssistantTips1.png" width = "35%" height = "35%"/>
+<img src = "./images/StudyAssistantTips2.png" width = "35%" height = "35%"/></center>
+
+### Behavior
+This space offers students the option to seek help in their academic endeavors from tips provided by students and Earl Technologies. 
+
+Student tips are sourced from a Reddit page. Few of the top rated ones are shown, each with the name of the student, their year of study, and the topic of their advice. Students can click on the Tips they see in this box or click View More to enter the reddit page and see more of the tips posted there.
+
+Below that are tips that Earl Technologies has created based on the professional advice of successful instructors and students. Clicking on any of those will take the student to a more detailed screen where the advice is given.
+
+</div>
+<a href = "#top">[top]</a>
+</div>
 
 
 
+&nbsp;<br>
+&nbsp;<br>
 
 
 
 <div id = "todo_check_list">
 <div markdown = "1">
+
 ## Checklists and Todolists
-### Design Decisions and Rationale
-**TODO Brendan**
-### Requirement from Phase 1
-**TODO Brendan**
+
 ### Low Fidelity Prototype
 <center><img src = "./images/StudyAssistantChecklist1.png" width = "35%" height = "35%"/>
 <img src = "./images/StudyAssistantChecklist2.png" width = "35%" height = "35%"/></center><br>
 <center><img src = "./images/StudyAssistantChecklistAlert.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
-**TODO Brendan**
+The checklist space provides a list a student can use to keep track of things they need to do with regards to each class they are taking, or other miscellaneous tasks.
+
+The yellow circles indicate tasks that an instructor recommends students to complete. Instructors of classes can create recommended tasks for students to do, and have the application send that task to the students lists.
+
+If any instructor has sent a new task for a student to view, they will be sent and alert. The student can choose whether or not to update their list.
+
+The black circles are tasks that the student has made themselves. They can be inside a specific course group, outside any course group, or fitted into custom groups the student can define.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
+---
 
 
-
-
+&nbsp;<br>
 
 
 
@@ -705,14 +783,16 @@ The second sub-function is having the calendar symbol, which allowed student to 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
+---
 
 
-
-
-
+&nbsp;<br>
 
 
 
@@ -735,13 +815,17 @@ By doing this, we can not only assist users with study but also provide them an 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
+&nbsp;<br>
 
 
 
@@ -775,15 +859,19 @@ The user should be able to click the search button, and the application will the
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
-
-
+&nbsp;<br>
 
 
 
@@ -809,12 +897,16 @@ The menu in the top left corner, when clicked, should slide out the main navigat
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
+---
 
 
-
+&nbsp;<br>
 
 
 
@@ -854,14 +946,18 @@ Although not displayed on the prototype, a button will be available for a studen
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
 
-
+&nbsp;<br>
 
 
 <div id = "student_finances">
@@ -884,13 +980,17 @@ The top left menu button will behave in a similar manner to the other sections. 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
 &nbsp;<br>
 
 
+---
 
 
-
-
+&nbsp;<br>
 
 
 
@@ -911,16 +1011,19 @@ The top left menu bar, and top right help buttons behave in a similar manner to 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
 &nbsp;<br>
 
 
 
 
+---
 
 
-
-
-
+&nbsp;<br>
 
 
 
@@ -942,19 +1045,19 @@ The only ways that this component screen differs in behavior from that of the pa
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
-
-
-
-
-
-
+&nbsp;<br>
 
 
 <div id = "link_bank_account">
@@ -976,15 +1079,16 @@ When a uesr clicks on "Choose Financial Institution" button, a pop down menu dis
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
 &nbsp;<br>
 
+---
 
 
-
-
-
-
-
+&nbsp;<br>
 
 
 
@@ -1009,17 +1113,18 @@ When a user clicks the pop down menu (at top left) to select the semester, the f
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
-
-
-
-
+&nbsp;<br>
 
 
 <div id = "user_account">
@@ -1047,13 +1152,19 @@ A language selector (not seen in the prototype) will allow a user to change the 
 </div>
 <a href = "#top">[top]</a>
 </div>
+
+
+
+
+
 &nbsp;<br>
 
 
 
+---
 
 
-
+&nbsp;<br>
 
 
 
@@ -1083,7 +1194,10 @@ TODO Daniel
 
 
 
+---
 
+
+&nbsp;<br>
 
 
 
