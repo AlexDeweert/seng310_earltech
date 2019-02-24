@@ -138,19 +138,19 @@ Behavior -->
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
             <li><a href = "#assignment_alarm">Assignment Alarm</a>
-            <br> TODO: Brendan
+            <br> If a test or assignment is nearing its due date, an alert will appear on the users phone that tells them which assignment or test is drawing near.
             </li>
             &nbsp;<br>
             <li><a href = "#study_tips_and_tricks">Study Tips and Tricks</a>
-            <br> TODO: Brendan
+            <br> Students can visit this space to find some study tips recommended by students or by professionals.
             </li>
             &nbsp;<br>
             <li><a href = "#test_reminders">Test Reminder</a>
-            <br> TODO: Brendan
+            <br> A yellow warning symbol will appear if an assignment that has not been marked as “done” is due very soon.
             </li>
             &nbsp;<br>
             <li><a href = "#todo_check_list">Todo/Check List</a>
-            <br> TODO: Brendan
+            <br> Provides a space where the student can get tasks pertaining to their courses, and make custom tasks.
             </li>
             &nbsp;<br>
         </ol>
@@ -547,6 +547,7 @@ This component forms part of the design behavior that directly fulfills a requir
 
 ### Low Fidelity Prototype
 <center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
 Subheader
 View, Edit or Delete your Saved Degree Maps!
@@ -585,10 +586,12 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 ## Study Assistant
 
 ### Design Decisions and Rationale
+This particular section and it's child component subsections were ones in which a lot of information would potentially be available to the user at any one time. The scrolling widget was needed for many components in order to fit it all into one location. Pop-up dialogs are very important for the reminders and alarm functions as well. No particular interface metaphor was followed here, apart from those implicit in everyday GUI design inherited from the pioneers of iOS, Android, etc and their progenitors.
+
 
 ### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2.1 and 2.2</a>; "*The student may chat and provide details (faculty, preferred Graduating Year, number of courses per semester) to a Virtual Assistant which automatically compile a chronological sequence of semesters based on user preferences.
-Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*"
+This component and it's child components (Tests and Assignments, Study Tips and Tricks, Checklists and Todolists) form part of the design behavior that indirectly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2.1 and 2.2</a>; "*The student may chat and provide details (faculty, preferred Graduating Year, number of courses per semester) to a Virtual Assistant which automatically compile a chronological sequence of semesters based on user preferences.
+Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*" This particular requirement may be broadly interpreted. One of those interpretations may include the Virtual Assistant directing the user towards this section, which would help the user organize their semester appropriately.
 
 ### Low Fidelity Prototype
 <center><img src = "./images/StudyAssistantMain.png" width = "35%" height = "35%"/></center>
@@ -612,22 +615,14 @@ The main page of the study assistant provides 3 sub directories:
 
 
 &nbsp;<br>
-
-
-
----
-
-
 &nbsp;<br>
 
 
 
 <div id = "test_reminders">
 <div markdown = "1">
-## Test and Assignments (with Alarm)
 
-### Design Decisions and Rationale
-This particular section and it's child component subsections were ones in which a lot of information would potentially be available to the user at any one time. The scrolling widget was needed for many components in order to fit it all into one location. Pop-up dialogs are very important for the reminders and alarm functions as well. No particular interface metaphor was followed here, apart from those implicit in everyday GUI design inherited from the pioneers of iOS, Android, etc and their progenitors.
+## Test and Assignments (with Alarm)
 
 ### Low Fidelity Prototype (Part 1)
 <center><img src = "./images/StudyAssistantTestAssign1.png" width = "35%" height = "35%"/></center>
@@ -768,17 +763,22 @@ The black circles are tasks that the student has made themselves. They can be in
 
 <div id = "map">
 <div markdown = "1">
+
 ## Maps
+
 ### Design Decisions and Rationale
-The unique thing about this feature is that is only required mapping database within the school’s campus. In other way, it can only navigate inside the campus areas but the processing and generating speed. The “Map” allows users to input theirs location or press the arrow icon to automatically put in their coordinate and theirs destination. The app will then generate the best way to get there and estimate the distance as well as the time to get there.
+The unique thing about this feature is that it only requires a mapping database within the school’s campus. The mapping feature will only provide navigations features which encompass the campus area, further increasing its processing and generation speed. The “Map” allows users to input their location or press an arrow icon which automatically logs their coordinate and updates their destination; the appplication generates the best way to get to a location, estimates the distance, and provides an expected time of arrival.
+
 ### Requirement from Phase 1
-From “User requirement” <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">Section 4 of Phase 1 Project</a>, we develop this function to help new students, teachers or staff member to know the way around campus with just a press of a button.
+Based on a Phase 1<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements - Student - Paragraph 4 </a>, we designed this function to help new students, teachers or staff members optimize their traversal of the campus with just a press of a button, thus fulfilling the requirement stated.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/Map.png" width = "35%" height = "35%"/></center>
-### Behavior
-There 2 sub-functions that make this “Map” unique, convenient and extremely helpful for students. The first one is the “Pin” function (The pin symbol below the search bar) that can be press after the app has generated a path to a destination to pin that path and destination for next use. User can customize the color of the pin to distinguish different destination, so for the next use, they can just press the pin symbol on the map and it will automatically generate path from theirs location at that moment. This will be link to the weekly time table, so every courses’ classrooms in that semester will be pinned to the map with the option ”View on map” in the “Weekly timetable” Section.
 
-The second sub-function is having the calendar symbol, which allowed student to jump between the map and the “Weekly Timetable”, so students can check their other classes in the day and how to get there easily. With this, students, staff members, teachers or even parents can know the way around campus, increase cost and time efficiency. 
+### Behavior
+There are 2 sub components that make this “Map” unique, convenient, and extremely helpful for students. The first one is the “Pin” function (The pin symbol below the search bar in the prototype) can be pressed after the application has generated a path to a destination in order to save that path and destination for another mapping session. A user can customize the color of the pin to distinguish different destinations. For example, for the next mapping session, the user can just press the saved pin symbol on the map and it will automatically generate a path from their current location to the saved destination. The data generated by the mapping function will be linked to the users weekly time table, so that all of the users courses classroom locations within the relevant semester will be pinned to the map. These auto generated pins will come with the option ”View on map” in the within the <a href = "#weekly_timetable">Weekly Timetable</a> section.
+
+The second sub-function is the calendar symbol, which allows a user to jump between the map and the Weekly Timetable; students can check their other classes on the same day, and can easily find a route to get to the next class quite easily.
 
 </div>
 <a href = "#top">[top]</a>
@@ -799,18 +799,19 @@ The second sub-function is having the calendar symbol, which allowed student to 
 <div id = "school_events">
 <div markdown = "1">
 ## School Events
+
 ### Design Decisions and Rationale
+With this component By doing this, not only can we assist users with study, but we can also provide them with an overview about what happens on campus. This includes whatever event might be deemed useful for them. This also includes contests, events, and academic projects.
+
 ### Requirement from Phase 1
 ### Low Fidelity Prototype
 <center><img src = "./images/SchoolEvents.png" width = "35%" height = "35%"/></center>
 ### Behavior
-There will be the exact date follows by all the news and events uploaded that day, on the main screen of the “School Events”, there will be only headlines and summaries, and when the user tap on “Read more” there will be a full article about the events or the news.
+All news and events that occur around campus on a particular day will be uploaded to new and events database as soon as possible. The application will be updated based on changes in that database whenever the user queries this section. On the main screen "School Events", there will only exist headlines and summaries. When a user taps the button "Read more" the headline or summary will be expanded so that the full article can be read.
 
-This feature will be linked to students’ course schedule to filter and prioritize events or news which are relevant to theirs courses or major. For example,a requirement from Phase 1 user profile for “Bob” states that he still has some confusion with the co-op program, but with this feature, he will know every time there is a co-op fair, resume lab or event mock interview happen on campus. 
+This feature will be linked to a students course schedule in order to filter our and prioritize news or events that are relevant to their current coarse schedule and their major.
 
-There will also be notification system on the up right corner of the screen to show user how many new articles they haven’t read. At the bottom of the screen there will be an option called “view older news” which allows users to scroll down to news event from few months ago.
-
-By doing this, we can not only assist users with study but also provide them an overview about what happens on campus, what event can be useful for them, contests, events and academic projects can be brought to student more easily.
+A notification system will be accessible from the upper right corner of the screen which shows the user how many news articles they haven't yet read. At the bottom of the screen there will be an option available called "View Older News" which will allow a user to view older news and events entries.
 
 </div>
 <a href = "#top">[top]</a>
