@@ -5,13 +5,21 @@ date:   2019-02-23 09:00:00 -0800
 categories: phase2
 ---
 
+<center><img src = "../../earllogo_alt.png" /></center>
+
 # Phase 2: Design
 
 &nbsp;&nbsp;&nbsp;&nbsp;Welcome to the design portion of the CalendarCompanion application. Here we will discuss the design details surrounding a mobile implementation of Calendar Companion. We will provide design decisions, details, and prototypes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;This document serves to provide an overview of the design phase of the CalendarCompanion application. We will first provide a high level hierarchical overview and short description of each component in our design proposal. Next, each component will be be described in detail; each section will include a short component description, rationale for the design decisions of the component (interface metaphors, widget choices, etc), plus how that portion of the design fulfills a requirement based on data gathered in Phase 1. Finally, each component section will include a low fidelity prototype, and a detailed description of the behavior of each component widget.
+&nbsp;&nbsp;&nbsp;&nbsp;This document serves to provide an overview of the design phase of the CalendarCompanion application. We will first provide a high level hierarchical overview and short description of each component in our design proposal. Next, each component will be be described in detail; each section will include a design decision rationale for the component in question (interface metaphors, widget choices, etc), plus how that portion of the design fulfills a requirement based on data gathered in Phase 1. Finally, each component section will include a low fidelity prototype, and a detailed description of the behavior of each component widget.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Using this document, a developer should be provided with enough detail that the application could be made with little to no additional guidance from the designers of the application. The Earl Technologies team is please to present the CalendarCompanion prototype and design document.
+<!-- Design Desicion and Rationale
+Requirement from Phase 1
+Low Fidelity Prototype
+Behavior -->
+
+&nbsp;<br>
 
 ---
 
@@ -87,17 +95,23 @@ categories: phase2
 </ol>
 &nbsp;<br>
 &nbsp;<br>
+
+---
+
+&nbsp;<br>
+&nbsp;<br>
+
 <div id = "high_level_overview">
 <div markdown = "1">
 # Hierarchical overview
 </div>
 <ol>
     <li><a href = "#login_page">Login Page</a>
-        <br>This is a standard login page that will display a CalendarCompanion logo. This page is allows a user to enter a netlink (or similar) ID, and their password. This page will display standard options typical in a mobile application login page; options such as forgot password, forgot account name, remember me, signup, etc. A successful sign in here will direct the user the application home page that contains links to course schedule, study assistant, map, school events, find my prof, student finances, user account, and help. All interaction in this application is done via touch screen interaction.
+        <br>This is a standard login page that will display a CalendarCompanion logo. This page is allows a user to enter a netlink (or similar) ID, and their password. This page will display standard options typical in a mobile application login page; options such as forgot password, forgot account name, remember me, signup, etc. A successful sign in here will direct the user the application home page that contains links to course schedule, study assistant, map, school events, find my prof, student finances, user account, and help. All interaction in this application is done via touch screen interaction. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
     <li><a href = "#course_schedule">Course Schedule</a>
-        <br>This page acts as a parent to other sections related to scheduling. This page will be home to four submenus. Underneath each submenu will be a subtitle which explains what it's use is. In addition, students may scroll down to see to see all submenus in cases where they menus do not fit on the device screen.
+        <br>This page acts as a parent to other sections related to scheduling. This page will be home to four submenus. Underneath each submenu will be a subtitle which explains what it's use is. In addition, students may scroll down to see to see all submenus in cases where they menus do not fit on the device screen. <a href = "#top">[top]</a>
         </li>
         &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
@@ -119,7 +133,7 @@ categories: phase2
             </li>
         </ol>
     <li><a href = "#details">Study Assistant</a>
-    <br>The Study Assistant page is parent to all components that are related to what a user might expect to find in a typical study assistant application. Such components as alarms, tips an tricks, reminders, and checklists are submenus to this page.
+    <br>The Study Assistant page is parent to all components that are related to what a user might expect to find in a typical study assistant application. Such components as alarms, tips an tricks, reminders, and checklists are submenus to this page. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
@@ -141,15 +155,15 @@ categories: phase2
             &nbsp;<br>
         </ol>
     <li><a href = "#map">Map</a>
-    <br>One of the most significant features of the CalendarCompanion application is campus map navigation. This section is navigated to based on the main menu item “Map”. It can also be selected from “Find Class Room” in the “Course Schedule” section, or by requesting it from the Virutal Assistant.
+    <br>One of the most significant features of the CalendarCompanion application is campus map navigation. This section is navigated to based on the main menu item “Map”. It can also be selected from “Find Class Room” in the “Course Schedule” section, or by requesting it from the Virutal Assistant. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
     <li><a href = "#school_events">School Events</a>
-    <br>One of the factors that greatly affect a student's performance at university is their social life. Moreover, social development at this stage is a student's life is key to their success in the workplace. This part of the application keeps a student apprised of up-to-date news around campus. In this feature, all academic events, social events, and campus news are uploaded to the student's School Events feed everyday.
+    <br>One of the factors that greatly affect a student's performance at university is their social life. Moreover, social development at this stage is a student's life is key to their success in the workplace. This part of the application keeps a student apprised of up-to-date news around campus. In this feature, all academic events, social events, and campus news are uploaded to the student's School Events feed everyday. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
     <li><a href = "#find_my_prof">Find My Prof</a>
-    <br>Here we have the Find My Prof section which allows a student to search a professor by name and by institution. This section acts as a parent to two other sections. The results of a search on this page can be utilized in the child sections "Contact Info and Office Hours" and "Professor Ratings".
+    <br>Here we have the Find My Prof section which allows a student to search a professor by name and by institution. This section acts as a parent to two other sections. The results of a search on this page can be utilized in the child sections "Contact Info and Office Hours" and "Professor Ratings". <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
@@ -163,191 +177,467 @@ categories: phase2
             &nbsp;<br>
         </ol>
     <li><a href = "#student_finances">Student Finances</a>
-    <br>For this portion of the application, the student may view financial information such as outstanding tuition payments, current personal account balance, linking a bank account to the personal CaldenarCompanion account, or depositing funds into the CalendarCompanion account with a credit card.
+    <br>For this portion of the application, the student may view financial information such as outstanding tuition payments, current personal account balance, linking a bank account to the personal CaldenarCompanion account, or depositing funds into the CalendarCompanion account with a credit card. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
     <ol style = "list-style-type: upper-alpha">
             <li><a href = "#tuition_and_account_balance">Tuition and Account Balance</a>
-            <br> TODO: Alex
+            <br> This component is a child to Student Finances, and it allows a user to view a quick summary of their tution account, included balances and recent payments. In addition, the student may view balances of linked bank accounts or ONECard (or similar) accounts.
             </li>
             &nbsp;<br>
             <li><a href = "#one_card_account">ONECard Account (or similar)</a>
-            <br> TODO: Alex
+            <br> Here is a detailed summary of a users ONECard account. This view allows a user to observe the current balance, the last tranasaction made including where and when, and also allows deposits to be made via linked bank account or a credit card.
             </li>
             &nbsp;<br>
             <li><a href = "#link_bank_account">Link Bank Account</a>
-            <br> TODO: Alex
+            <br> Here a user may link an outside financial institution to their CalendarCompanion account so that tuition payments can be made directly from the users bank. In addition, a linked bank account can be used to fund a ONECard account.
             </li>
             &nbsp;<br>
             <li><a href = "#make_payment">Make Payment</a>
-            <br> TODO: Alex
+            <br> In this component, we see an interface to a university's tuition payment system. This view shows current balance, last amount paid. It allows a user to choose to account from which to make a payment. Following a payment transaction, a user will observe a receipt which they can e-mail or print. <b>//TODO add e-mail & print button to payment mockup</b>
             </li>
             &nbsp;<br>
         </ol>
     <li><a href = "#user_account">User Account</a>
-    <br>jkhs
+    <br>Here we have the CalendarCompanion user account component. This page is parent to four tabs, which are subcategories of the User Account: personal information, account information, and preferences. The User Account is a central location for CalendarCompanion account information, UVic (or other school) account information, and CalendarCompanion application preferences. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
     <li><a href = "#help">Help</a>
-    <br>dsfsd
+    <br>In case a user requires any assistance, CalendarCompanion has it covered. The help section is home to section definitions, frequently asked questions, reporting bugs, and parent to a tutorial section. <a href = "#top">[top]</a>
     </li>
     &nbsp;<br>
         <ol style = "list-style-type: upper-alpha">
             <li><a href = "#calendar_companion_tutorial">CalendarCompanion Tutorial</a>
-            <br>
+            <br>In this section, a user can select from a list of tutorials for the most common sequence of actions that a user might take while utilizing CalendarCompanion. The tutorial section is based on a step-by-step walkthrough style approach where a user would tap buttons and complete actions along the way while a tutorial bubble or arrow system tells them what to do next and why.
             </li>
             &nbsp;<br>
         </ol>
 </ol>
-<a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+&nbsp;<br>
+
+---
+
+&nbsp;<br>
+&nbsp;<br>
+
+
+<!-- Design Decisions and Rationale
+Requirement from Phase 1
+Low Fidelity Prototype
+Behavior -->
+
+
+<div id = "design_details">
+<div markdown = "1">
+# Design Details and Specifics
+</div>
+</div>
+
+
 <div id = "login_page">
-login page
-Integer eu tellus ut leo pellentesque tincidunt. Vivamus viverra pharetra congue. Nunc non ornare purus, vel mattis justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce imperdiet mi eget maximus cursus. Donec tempor eros hendrerit risus venenatis, non consequat enim sodales. Nullam at rutrum massa.
+<div markdown = "1">
+
+## Login Page
+
+### Design Decisions and Rationale
+&nbsp;&nbsp;&nbsp;&nbsp;The design of the login page was fairly straightforward. It's best to take advantage of the most common login page layout since most people are familar with these kinds of pages given the influx of mobile applications that require accounts in recent years. The decision to include sections such as "forgot password", "remember me", "sign up" was an easy one. These design patterns are helpful and well known. 
+
+### Requirement from Phase 1
+&nbsp;&nbsp;&nbsp;&nbsp;This is an implicit requirement from Phase 1. For any users to interact with a mobile application that requires specific knowledge and recordkeeping for one student, the requirement for a login page was not a question. This requirement is met in our design.
+
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
+### Behavior
+The CalendarCompanion application is displayed as a splash screen while the applicaiton is loading. Once loaded, ”Welcome to CalendarCompanion, please log in!” is displayed to the user. The user is provided with two text boxes into which they will add their netlink id and password. This is done via software keyboard that pops up when a user clicks the field. A "Remember Me" checkbox below the id and password fields is available so that a user does not have to keep filling in the information after they log out or the session expires and the application is restarted.
+
+One of two things will happen after a use attempts to log in with credntials. In both cases, a dialog box will pop up telling user either that "this device will be trusted so that future logins are not required" or "credentials not recognized, redirecting to account creation page" at which point the user will be directed to an external site, which will be the sign up page on the UVic (or similar) website.
+
+This rederiction will open the preffered browser of your phone system. For example, Chrome or Safari.
+
+A "Create Account" button will be visible at the bottom of the login screen, which will lead a user who clicks it to the the "Create Account" page. Once on the create account page, the user will have see the "Virtual Assistant" AI chat bot on a bottom portion of the screen. There will be a "forgot your password" link as well, which will lead them to a password recovery screen. 
+
+Once logged in successfully, a user will be directed to the home screen which is a parent screen that displays all of the main options for the user. These options are available as buttons with descriptions, and are detailed in the following sections.
+
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
-<div id = "details">
-details
-Fusce euismod felis at leo vehicula malesuada. Vivamus convallis nisi ac lectus suscipit pellentesque sit amet sit amet lectus. Nulla facilisi. Morbi viverra leo lacus, non egestas ipsum placerat ut. Vivamus hendrerit elementum commodo. Aenean consectetur elit tellus, ut consectetur leo varius id. Suspendisse egestas justo ut lacinia dignissim.
-<a href = "#top">[top]</a>
-</div>
-&nbsp;<br>
+
+
 <div id = "course_schedule">
-course_schedule
-In ac sapien posuere, hendrerit metus nec, vehicula ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam in fringilla mi. Pellentesque vestibulum ligula eget tortor hendrerit, et luctus augue ullamcorper. Aliquam at laoreet neque. Proin vel nisl nisi. Quisque et erat eu metus tempus tempus a convallis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie velit a lacinia placerat. Sed congue lectus magna, faucibus tincidunt turpis congue ut. Donec a magna a felis bibendum dictum sed nec lorem.
+<div markdown = "1">
+## Course Schedule
+### Design Decisions and Rationale
+This is simply a landing page that one is directed to after one had clicked the "Course Schedule" button or link from the home page, or was directed here with a link provided by the Virtual Assistant. There is no specific interface metaphor that was followed for this page. The widgets present are simply links to the child pages categorized under Course Schedule. These links are submenus with descriptions titled "Future Courses", "Weekly Timetable", "Create Degree Map", and "My Degree Map".
+
+### Requirement from Phase 1
+This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
+
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
+### Behavior
+The behavior of this component is quite simple. A user clicks one of the buttons and is directed to the appropriate link.
+
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
 <div id = "future_courses">
-future_courses
-Ut elementum urna metus, ac condimentum sapien elementum at. Quisque eget posuere metus, id elementum ligula. Quisque eget maximus ipsum. Fusce facilisis at risus eget placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce a turpis sed risus efficitur ornare aliquam ac metus. Vestibulum ac feugiat purus. Vivamus scelerisque nisi vel purus hendrerit egestas. In ut nisi pretium eros facilisis posuere et ut felis. In faucibus, ipsum at malesuada tincidunt, quam justo condimentum nunc, at fringilla nulla elit in magna. Nullam viverra velit vitae neque volutpat, elementum feugiat justo scelerisque. Nullam laoreet felis metus, ut consequat odio posuere ac. Nullam ac mi elit.
+<div markdown = "1">
+
+## Future Courses
+
+### Design Decisions and Rationale
+This section was designed with question, answer, and response in mind. Once in this section, a user will be presented with two questions which will assist the application in narrowing down the correct response and routing. These questions follow an interface metaphor based on binary decision making model. While most users typically do not define their daily decisions as binary, such decisions are intuitive for most people to understand because we in fact make such decisions every day. In addition, it can be helpful to simply respond to questions that an application asks of a user and trust that it will respond in the correct way. This section will provide a user with the ability to browse the most up to date lists of future courses that UVic has to offer. This component will also provide the user with the ability to browse and look at the current online correspondence courses that UVic offers to students. 
+
+### Requirement from Phase 1
+This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
+
+### Low Fidelity Prototype
+
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
+### Behavior
+During the process of browsing through future courses, CalendarCompanion will first query the user with two questions in order to narrow down search results resulting in less confusion due to refined results. By establishing available courses in specific sessions (Summer/Fall/Spring), and what year the user would like to take a course in, the application can rule out courses that would be otherwise unavailable. The questions are: <br>
+1. What term (Summer/ Fall / Spring) are you interested in? This is done because not all courses are offered in every tearm.<br>
+2. What year are you interested in? This is done because some courses are scheduled to be eliminated or replaced in future years. By specifying the year, the application can further narrow down the available courses to display.
+
+Following the initial questioning, users will be prompted to click a “search courses” button. This button takes the user to the page of results.
+		
+**Note**: there is a left facing arrow in the uppermost left corner of the phone screen. When clicked, the arrow will navigate uesrs to the previous menu. 	In addition, there will be a small question mark in the top right of the screen which, when clicked, opens a pop up dialog that will tell users what the left facing arrow is for.
+
+Next, the application will analyze selected queries and display a grid of faculties that students can tap on. Above the grid a message displayed will read, “Select a faculty to browse courses offered during *First query response** in the year *Second query response*.”
+
+The question mark and left facing arrow will also be present, except the question mark will explain as well that this screen is the faculty navigator/selector and that the user may tap on a faculty to see offered courses.
+
+Next, A list of courses ordered numerically from introductory to thesis level will appear alongside their respective course title. This list may be long and user will have the functionality to scroll down to browse the list. 
+
+Above the list it says “*Faculty chosen*"  courses for “*Query 1 response* ” session in "*Query 2 response.*”
+
+Again the question mark in the top right, and left facing arrow in the top left will be available. The left facing arrow will transport the user to the faculty navigator/selector. The question mark will expand to a message explaining that these are the following courses available for the faculty in the respective session and year chosen. As well, the question mark will advise the user that they can tap any course for more information.
+
+The courses displayed will have a “tap” interactive option, where users may tap on any course to discover course information such as<br>
+1. Course summary
+2. Sessions and years course is offered.
+3. Requirements (third year standing, etc)
+4. Prerequisites 
+5. Corequisites 
+6. Notable professors to teach the course and their profiles. (hyperlinked)
+7. Peer reviews of course experience. (hyperlinked)
+
+Again, users may use the upper leftmost corner to navigate back towards the list of courses available for specific faculty/session/year. However the question mark will offer tons of support, so much so that a message will appear next to the question mark on this page. The message reads important information:
+
+“This is the course of information page of *course chosen* for the *faculty chosen for *query 1* session(s) in *query 2*”
+“Please keep in mind that courses will have specific requirements. Examples range from a minimum year standing to a certain minimum mark achieved in a prerequisite course. ”
+
+After a user has tapped on a specific course, they will notice information about specific courses. Most notably, prerequisite and corequisites. 
+
+At the bottom of the scrolling list users will encounter a button widget which returns them back to the main menu. This button is titled “return”
+
+
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
 <div id = "weekly_timetable">
-weekly_timetable
-Cras a urna vel purus varius condimentum. In maximus condimentum auctor. Sed aliquam ante ut hendrerit placerat. Nulla a gravida ante. Pellentesque non cursus lectus, eget rutrum dolor. Sed imperdiet felis eu pellentesque sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent mollis, ligula eu pellentesque volutpat, enim eros molestie ipsum, non aliquam ante felis in ipsum. Quisque vulputate risus orci, in consectetur libero ullamcorper et. Duis tristique ex enim, ac dignissim lectus facilisis vitae.
+<div markdown = "1">
+## Weekly Timetable
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "create_a_degree_map">
-create_a_degree_map
-Integer eu tellus ut leo pellentesque tincidunt. Vivamus viverra pharetra congue. Nunc non ornare purus, vel mattis justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce imperdiet mi eget maximus cursus. Donec tempor eros hendrerit risus venenatis, non consequat enim sodales. Nullam at rutrum massa.
+<div markdown = "1">
+## Create a Degree Map
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "my_degree_maps">
-my_degree_maps
-Proin convallis ex et sapien rhoncus eleifend. Donec dignissim elit ut orci convallis molestie. Vestibulum ultrices malesuada leo, a tristique elit auctor non. Aliquam commodo rhoncus tellus sed dictum. Nunc eget neque vitae magna rutrum tincidunt at sit amet arcu. Ut facilisis ex a ultrices consectetur. Mauris et eros varius massa semper commodo ut eget est. Duis turpis augue, fermentum ut pharetra in, consequat eu ipsum. Maecenas mollis nec nibh non auctor. In at metus vitae mauris ultricies semper. Vivamus sapien dolor, fringilla ut convallis sit amet, venenatis nec turpis. Maecenas mattis mattis tellus a mattis. Phasellus risus libero, malesuada rutrum dui non, lacinia accumsan nulla.
+<div markdown = "1">
+## My Degree Maps
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "study_assistant">
-study_assistant
-Integer vel placerat enim. Maecenas a tortor vel eros efficitur lobortis. Nulla laoreet eros vel nisl eleifend, sit amet vehicula sem pretium. Phasellus iaculis, dui in semper scelerisque, velit risus laoreet arcu, a efficitur ante nisi fringilla libero. Vestibulum pulvinar hendrerit erat eu maximus. Etiam venenatis sit amet dolor eget posuere. Morbi pellentesque arcu fermentum sem tincidunt, id porttitor quam pellentesque. Donec rutrum lobortis enim, sit amet lobortis dolor laoreet vel. Maecenas rhoncus porttitor lacus, eu fermentum turpis varius sed. In hac habitasse platea dictumst. Morbi eu massa risus.
+<div markdown = "1">
+## Study Assistant
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "assignment_alarm">
-assignment_alarm
-Fusce massa leo, aliquam non magna at, maximus elementum felis. Integer sit amet erat lectus. Mauris id vehicula arcu, a fermentum ante. Pellentesque ut velit at nulla hendrerit tempor. Maecenas ornare, mi eu eleifend tincidunt, elit turpis commodo augue, ut interdum ligula ante ut risus. Ut eget suscipit justo. Aliquam pharetra neque vitae placerat euismod. Nullam malesuada ultricies dignissim. Proin elementum nulla ipsum, eu viverra elit lacinia maximus. Nulla nulla ante, consequat cursus semper in, facilisis vitae felis. Cras id dui et nulla posuere tincidunt. Nullam faucibus est et tristique auctor. Integer rutrum accumsan lacus suscipit luctus. Cras dictum eros vel efficitur faucibus. Proin sollicitudin lacus nec hendrerit accumsan. Cras semper quis erat ac malesuada.
+<div markdown = "1">
+## Assignment Alarm
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "study_tips_and_tricks">
-study_tips_and_tricks
-Quisque blandit varius tellus, ut gravida lorem. Aliquam eget nisi ac nulla rutrum feugiat. Sed eget accumsan ligula. Sed porta maximus augue non vulputate. Vestibulum fermentum eros justo, in sagittis tellus scelerisque in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec erat felis, commodo vel consequat ac, finibus in mi. Sed volutpat fringilla lacinia. Sed consequat eget justo eget pulvinar. Aliquam accumsan scelerisque auctor. Mauris suscipit faucibus sem facilisis rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque dui nulla, scelerisque sed sagittis eu, elementum id nulla. Fusce felis orci, posuere id mattis quis, maximus vehicula lectus. Cras sit amet sem sit amet ligula pretium ornare. Aliquam egestas felis quis nibh tempor, non aliquet lectus tristique.
+<div markdown = "1">
+## Study Tips and Tricks
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "test_reminders">
-test_reminders
-In elit risus, mollis ac faucibus vel, faucibus ut sem. Nullam fringilla aliquam ex id bibendum. Aenean malesuada nibh ac nulla lobortis venenatis. Curabitur orci nibh, interdum non enim nec, rhoncus consectetur tortor. Aliquam a dolor non lorem fringilla euismod. Aenean eleifend urna sed purus scelerisque, ac ullamcorper dui faucibus. Proin imperdiet elementum metus. Praesent consectetur arcu ipsum, sed pellentesque urna malesuada sed. In pharetra ante ut sem faucibus vestibulum. Aenean at cursus metus. Phasellus nunc orci, aliquam vel consequat ut, commodo quis ipsum. Cras non diam lobortis, tristique risus non, facilisis erat. Suspendisse eu placerat ex, non scelerisque mi. Donec tincidunt, velit sed fermentum tincidunt, justo nunc porttitor dui, a facilisis est arcu sit amet lacus. Donec condimentum risus id quam pharetra, vel consectetur nisi vulputate. Vestibulum lacus metus, maximus fermentum ornare cursus, commodo eu purus.
+<div markdown = "1">
+## Test Reminders
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "todo_check_list">
-todo_checklist
-Morbi in arcu eget metus hendrerit laoreet. Proin et ante orci. Mauris id euismod lacus. Donec cursus mauris eros, congue ultrices nunc pulvinar in. Quisque vitae lectus vitae est imperdiet condimentum. Donec nisl est, lobortis eu felis sed, sodales varius odio. Cras id dolor accumsan, blandit orci a, semper ante. Vestibulum vulputate sapien in odio efficitur, nec laoreet orci tristique. Aenean sit amet felis vel odio gravida vestibulum eu nec velit. Proin scelerisque vel nunc et aliquet. Nulla consectetur scelerisque diam ut ultrices. Praesent posuere mi augue, sit amet auctor turpis eleifend faucibus. Nulla imperdiet, tellus at blandit suscipit, purus odio feugiat justo, sed sollicitudin augue lacus a purus.
+<div markdown = "1">
+## Checklists and Todolists
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "map">
-maps
-Integer eget efficitur magna. Integer luctus magna velit, eu imperdiet tortor porttitor quis. Morbi non dui massa. Fusce cursus eros et ex mollis molestie. Duis interdum facilisis lorem ac condimentum. Nulla ut enim a urna luctus consectetur quis eu neque. Quisque lorem nisi, pulvinar id tortor et, euismod aliquet felis. Sed tincidunt sagittis magna, non molestie est pulvinar vitae. Praesent at nulla sapien. Quisque rutrum lacus sed nulla fringilla viverra. Donec eu tempus diam, vel sollicitudin purus. Nam aliquet ex a lectus pulvinar, ut gravida eros lobortis. Donec viverra felis nec est tincidunt tincidunt.
+<div markdown = "1">
+## Maps
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "school_events">
-school_events
-Vivamus auctor ultrices ex, ut efficitur magna sodales eu. In pretium accumsan eleifend. Maecenas blandit ligula sed ligula volutpat, nec placerat ante vulputate. Quisque quis diam vel tortor tempus ultricies et id purus. Integer bibendum risus vitae pulvinar volutpat. Pellentesque at accumsan elit. Nam pretium elit sit amet sollicitudin pharetra. In ornare eleifend sapien id vehicula. Vestibulum arcu nunc, dignissim ac porttitor vitae, tincidunt a odio. Donec dictum tellus eu tincidunt consequat.
+<div markdown = "1">
+## School Events
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "find_my_prof">
-find_my_prof
-Integer vitae orci ligula. Donec quis erat nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce a placerat est. Morbi egestas id sapien ut cursus. Phasellus mattis lorem turpis, et ullamcorper augue varius at. Vivamus cursus ultricies feugiat. Duis lobortis massa in posuere accumsan. Morbi volutpat suscipit interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris est lacus, accumsan ut hendrerit ac, aliquet sit amet risus. Mauris in hendrerit magna. Sed luctus ligula eu nulla luctus, ut feugiat mauris hendrerit.
+<div markdown = "1">
+## Find My Prof
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "contact_info_and_office_hours">
-contact_info_and_office_hours
-Sed eleifend tortor non quam suscipit pellentesque. Maecenas lacus velit, suscipit ac urna consectetur, volutpat suscipit dolor. Donec vulputate ante nec leo posuere convallis. Aenean vulputate consequat dui ac accumsan. Nam eu tristique nisi. Vivamus bibendum, lectus tincidunt pretium hendrerit, massa magna commodo massa, a mattis eros mauris sit amet neque. Integer rhoncus, lorem ac efficitur consectetur, massa elit auctor turpis, at egestas lorem est ac dolor. Etiam placerat nisl ac ante rutrum porta. Donec eu purus eleifend, accumsan libero a, suscipit ante. Donec dignissim fermentum fringilla. Fusce non tristique nulla. Donec massa diam, ullamcorper eu felis in, aliquam interdum ante. Duis id arcu vel orci fermentum tempor. Morbi orci sem, congue quis ultricies ut, laoreet eu tortor. Quisque at malesuada metus. Ut tempus congue est nec congue.
+<div markdown = "1">
+## Professor Contact and Office Hours
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "professor_ratings">
-professor_ratings
-Nullam dapibus elit at imperdiet pretium. Aenean lorem tellus, fringilla vitae posuere eu, dictum pretium turpis. Fusce erat enim, ultrices vitae arcu sit amet, luctus ullamcorper nulla. Vestibulum porta magna suscipit ligula sodales, non vestibulum leo imperdiet. Nunc vestibulum dolor tortor, dapibus volutpat sem pretium at. Aenean interdum turpis non ante scelerisque condimentum. Pellentesque semper enim orci, nec convallis magna ultricies ut. Sed feugiat, nibh in tincidunt gravida, mi erat molestie elit, vel tempus nisl lacus id arcu.
+<div markdown = "1">
+## Professor Ratings
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "student_finances">
-student_finances
-Ut mollis turpis non fringilla mollis. Donec tincidunt est ut magna sodales imperdiet. Aliquam et facilisis neque. Cras sagittis magna nec augue fringilla, nec cursus arcu dictum. Phasellus pellentesque est ultrices turpis mattis convallis. Duis at luctus ante, id dictum urna. Aliquam et commodo dui. Integer quis tellus condimentum, luctus lectus rhoncus, tincidunt risus. Sed blandit risus ex, sed ornare massa dignissim sed. Suspendisse posuere sodales enim dignissim dictum. Fusce eget aliquam sem. Cras pulvinar non ligula et tincidunt. Vivamus rhoncus vel erat sed malesuada.
+<div markdown = "1">
+## Student Finances
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "tuition_and_account_balance">
-tuition_and_account_balance
-Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<div markdown = "1">
+## Tuition and Account Balance
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "one_card_account">
-one_card_account
-Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<div markdown = "1">
+## ONECard Account (or similar)
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "link_bank_account">
-link_bank_account
-Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<div markdown = "1">
+## Link Bank Account
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "make_payment">
-make_payment
-Vivamus eu tempus sem. In dictum hendrerit risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget orci mi. Suspendisse fringilla dui tincidunt turpis volutpat laoreet. Sed volutpat odio non odio suscipit posuere. Donec at lorem mauris. Praesent volutpat pellentesque sem in consectetur. Donec at volutpat dui, convallis rhoncus tortor. Integer viverra ante tincidunt, rutrum neque a, ultrices nunc. Nulla ut hendrerit mauris.
+<div markdown = "1">
+## Make Payment
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "user_account">
-user_account
-Phasellus commodo neque ac aliquam interdum. Nulla non risus semper, rhoncus ipsum et, scelerisque lectus. Aenean euismod sed velit in fringilla. Cras convallis metus vitae dui maximus pulvinar. Suspendisse sed quam velit. Proin sit amet lacinia risus. Quisque pretium laoreet ipsum, nec porta diam pellentesque eget. Vivamus in ante ante. Nullam pharetra vestibulum ligula a rutrum. Morbi vitae diam pellentesque, fringilla lacus sit amet, tincidunt nunc. Donec ac dignissim lectus. Mauris volutpat gravida nunc. Curabitur consequat velit posuere augue euismod commodo.
+<div markdown = "1">
+## User Account
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "help">
-help
-Phasellus sed quam in arcu cursus rutrum id ut arcu. Aenean ac nisi eget ante lacinia volutpat. Ut maximus diam non accumsan consequat. Vivamus quis dapibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum ligula quis libero vulputate, et porta lorem placerat. Suspendisse vitae magna ullamcorper, accumsan neque vel, feugiat odio. Morbi congue tempus dui, quis egestas augue dignissim a. Donec efficitur convallis quam, at elementum orci varius vitae. Nam vitae odio lorem. Etiam ultricies quam ligula, sollicitudin aliquam lorem ornare vel. Morbi viverra massa leo, sed luctus augue egestas eu. In hac habitasse platea dictumst. Proin justo arcu, varius congue orci sit amet, ornare elementum lorem. Fusce lorem ligula, placerat nec luctus non, cursus ac dolor. Etiam mi justo, congue non commodo at, tempor quis orci.
+<div markdown = "1">
+## Help
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
 <div id = "calendar_companion_tutorial">
-calendar_companion_tutorial
-Donec ullamcorper nunc ac nisl auctor, et bibendum odio vulputate. Proin ac mauris commodo, semper turpis at, dictum erat. Donec sodales, augue suscipit pulvinar lacinia, urna ante finibus nisl, eget placerat ex nunc ut neque. In rhoncus ac est eget elementum. Sed ut pretium lacus. Etiam ut metus nec leo tincidunt pulvinar at vitae nibh. Pellentesque eget orci et lacus ornare suscipit eget vel tellus. Fusce arcu ligula, tincidunt non tellus pulvinar, tempus suscipit massa. Mauris a imperdiet nisi. Fusce id urna turpis. Cras bibendum ipsum sed pretium pulvinar. Suspendisse id diam diam. Quisque varius nisi lacus, sed egestas elit volutpat quis. Fusce id eleifend mi. Mauris in risus vel nisi viverra volutpat.
+<div markdown = "1">
+## Calendar Companion Tutorial
+### Design Decisions and Rationale
+### Requirement from Phase 1
+### Low Fidelity Prototype
+<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+### Behavior
+</div>
 <a href = "#top">[top]</a>
 </div>

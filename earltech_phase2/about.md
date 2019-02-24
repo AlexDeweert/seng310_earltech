@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: default
 title: About
-permalink: /about/
 ---
+
+<center><img src = "/earllogo_alt.png" /></center>
 
 Earl Technologies is a group of UVIC Computer Science and Software Engineering students taking the SENG 310 course during the Winter 2019 semester. The group consists of the following members:
 

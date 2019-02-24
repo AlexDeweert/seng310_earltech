@@ -5,6 +5,8 @@ date:   2019-02-14 21:42:27 -0800
 categories: phase1
 ---
 
+<center><img src = "../../earllogo_alt.png" /></center>
+
 # Phase 1: Requirements Gathering
 
 1. [Introduction]({% link content/phase1/2019-02-14-introduction.md %})
