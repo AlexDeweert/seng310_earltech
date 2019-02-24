@@ -316,7 +316,7 @@ This component forms part of the design behavior that directly fulfills a requir
 
 ### Low Fidelity Prototype
 
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 During the process of browsing through future courses, CalendarCompanion will first query the user with two questions in order to narrow down search results resulting in less confusion due to refined results. By establishing available courses in specific sessions (Summer/Fall/Spring), and what year the user would like to take a course in, the application can rule out courses that would be otherwise unavailable. The questions are: <br>
@@ -377,7 +377,7 @@ The decision to add left and right arrows was a simple one. Most users are famil
 ### Requirement from Phase 1
 This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
 ### Behavior
 
 Once tapped, the left uppermost corner left arrow will return a user to "Course Schedule" parent component.
@@ -432,7 +432,7 @@ This component forms part of the design behavior that directly fulfills multiple
 <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 10</a>; "*If a user deletes a pre or co-requisite to another course, a warning will be displayed to the user that the affected courses will not be available should the user continue the action. The option to revert the action will be present.*";
 
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 Upon Tapping in the uppermost left corner tap left arrow, the user will return to the Course Schedule parent component.
@@ -526,7 +526,7 @@ This component forms part of the design behavior that directly fulfills a requir
 <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 8</a>; "*If a course is deemed terminated for a specific degree requirement, the application will notify the user, and again offer a suggested course or ability to chose a course manually.*"
 
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
 ### Behavior
 Subheader
 View, Edit or Delete your Saved Degree Maps!
@@ -566,7 +566,7 @@ This component forms part of the design behavior that directly fulfills a requir
 Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*"
 
 ### Low Fidelity Prototype
-<center><img src = "./images/StudyAssistant.png"/></center>
+<center><img src = "./images/StudyAssistantMain.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 
@@ -592,7 +592,7 @@ Whether a user is stuck navigating through the application or is having trouble 
 ### Requirement from Phase 1
 **TODO Brendan**
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/StudyAssistantAlert.png" width = "35%" height = "35%"/></center>
 ### Behavior
 **TODO Brendan**
 </div>
@@ -616,7 +616,8 @@ Whether a user is stuck navigating through the application or is having trouble 
 ### Requirement from Phase 1
 **TODO Brendan**
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/StudyAssistantTips1.png" width = "35%" height = "35%"/>
+<img src = "./images/StudyAssistantTips2.png" width = "35%" height = "35%"/></center>
 ### Behavior
 **TODO Brendan**
 </div>
@@ -635,13 +636,16 @@ Whether a user is stuck navigating through the application or is having trouble 
 
 <div id = "test_reminders">
 <div markdown = "1">
-## Test Reminders
+## Test and Assignment Reminders
 ### Design Decisions and Rationale
 **TODO Brendan**
 ### Requirement from Phase 1
 **TODO Brendan**
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/StudyAssistantTestAssign1.png" width = "35%" height = "35%"/>
+<img src = "./images/StudyAssistantTestAssign2.png" width = "35%" height = "35%"/></center><br>
+<center><img src = "./images/StudyAssistantTestAssign3.png" width = "35%" height = "35%"/>
+<img src = "./images/StudyAssistantTestAssign4.png" width = "35%" height = "35%"/></center>
 ### Behavior
 **TODO Brendan**
 </div>
@@ -665,7 +669,10 @@ Whether a user is stuck navigating through the application or is having trouble 
 ### Requirement from Phase 1
 **TODO Brendan**
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/StudyAssistantChecklist1.png" width = "35%" height = "35%"/>
+<img src = "./images/StudyAssistantChecklist2.png" width = "35%" height = "35%"/></center><br>
+<center><img src = "./images/StudyAssistantChecklistAlert.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
 **TODO Brendan**
 </div>
@@ -1063,7 +1070,7 @@ The help section here follows a similar help design and layout to many other app
 This component fulfils a requirement, specifically the requirement from <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">Phase 1: User Requirements - Paragraph 2.1 and 2.2</a> "*Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*" The help section outlined in this component of the design, can be navigated to manually, or suggested by the Virtual Assistant per the requirement specifications.
 
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 TODO Daniel
