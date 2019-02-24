@@ -194,7 +194,7 @@ Behavior -->
             </li>
             &nbsp;<br>
             <li><a href = "#make_payment">Make Payment</a>
-            <br> In this component, we see an interface to a university's tuition payment system. This view shows current balance, last amount paid. It allows a user to choose to account from which to make a payment. Following a payment transaction, a user will observe a receipt which they can e-mail or print. <b>//TODO add e-mail & print button to payment mockup</b>
+            <br> In this component, we see an interface to a university's tuition payment system. This view shows current balance, last amount paid. It allows a user to choose to account from which to make a payment. Following a payment transaction, a user will observe a receipt which they can e-mail or print.
             </li>
             &nbsp;<br>
         </ol>
@@ -245,10 +245,12 @@ Behavior -->
 &nbsp;&nbsp;&nbsp;&nbsp;The design of the login page was fairly straightforward. It's best to take advantage of the most common login page layout since most people are familar with these kinds of pages given the influx of mobile applications that require accounts in recent years. The decision to include sections such as "forgot password", "remember me", "sign up" was an easy one. These design patterns are helpful and well known. 
 
 ### Requirement from Phase 1
-&nbsp;&nbsp;&nbsp;&nbsp;This is an implicit requirement from Phase 1. For any users to interact with a mobile application that requires specific knowledge and recordkeeping for one student, the requirement for a login page was not a question. This requirement is met in our design.
+&nbsp;&nbsp;&nbsp;&nbsp;This portion of the design meets an explicit requirement from Phase 1, "*Provides mobile or desktop login ability for access, creating new CalendarCompanion accounts*" at <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements - Student - Paragraph 1</a> .
+
+This component also meets two more requirements from Phase 1, <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements - Administration (and Parents or Sponsors) - Paragraph 1 for both</a> "*Administrative CourseCompanion accounts will be available for user registration.*" and "*Parent mode allows a login to the CourseCompanion usingthe student number of specified child, which allows a parent or sponsor monitor course mappings and transcripts.*"
 
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/image.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 The CalendarCompanion application is displayed as a splash screen while the applicaiton is loading. Once loaded, ”Welcome to CalendarCompanion, please log in!” is displayed to the user. The user is provided with two text boxes into which they will add their netlink id and password. This is done via software keyboard that pops up when a user clicks the field. A "Remember Me" checkbox below the id and password fields is available so that a user does not have to keep filling in the information after they log out or the session expires and the application is restarted.
@@ -260,6 +262,8 @@ This rederiction will open the preffered browser of your phone system. For examp
 A "Create Account" button will be visible at the bottom of the login screen, which will lead a user who clicks it to the the "Create Account" page. Once on the create account page, the user will have see the "Virtual Assistant" AI chat bot on a bottom portion of the screen. There will be a "forgot your password" link as well, which will lead them to a password recovery screen. 
 
 Once logged in successfully, a user will be directed to the home screen which is a parent screen that displays all of the main options for the user. These options are available as buttons with descriptions, and are detailed in the following sections.
+
+Not visible in the login prototype, a Parent or Adminstration mode switch can be toggled to change the type of account that can be created or logged in to. These accounts require special permission from school administration, and proof of permission must be provided to the CalendarCompanion admin staff must activate the special account based on that proof.
 
 </div>
 <a href = "#top">[top]</a>
@@ -283,7 +287,7 @@ This is simply a landing page that one is directed to after one had clicked the 
 This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
 
 ### Low Fidelity Prototype
-<center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+<center><img src = "./images/image.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
 The behavior of this component is quite simple. A user clicks one of the buttons and is directed to the appropriate link.
@@ -409,12 +413,27 @@ Tapping on a course will expand a pop up window that expands to provide even mor
 
 <div id = "create_a_degree_map">
 <div markdown = "1">
+
 ## Create a Degree Map
+
 ### Design Decisions and Rationale
+
 ### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
+This component forms part of the design behavior that directly fulfills multiple requirements from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*; and 
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2</a>; "*Allows student to configure desired degree map/schedule in multiple ways...*"; and
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 5</a>; "*By saving the desired degree schedule/map, CalendarCompanion will notify the student and remind them before course registration begins, reminding them to sign up for their respective planned term courses.*"; and
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 7</a>; "*If a course is full, the CalendarCompanion may recalculate the degree map, keeping time to graduation as efficient as possible.*"; and
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 9</a>; "*If a user accidentally deletes a course, an undo feature will be available to revert to a precious configuration.*"; and
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 10</a>; "*If a user deletes a pre or co-requisite to another course, a warning will be displayed to the user that the affected courses will not be available should the user continue the action. The option to revert the action will be present.*";
+
 ### Low Fidelity Prototype
 <center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
 Upon Tapping in the uppermost left corner tap left arrow, the user will return to the Course Schedule parent component.
 
@@ -502,7 +521,10 @@ Button [Create then save the degree map titled *user entered degree map from pag
 ### Design Decisions and Rationale
 TODO
 ### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
+This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 4</a>; "*The software then displays an intuitive design of each semester through multiple representations. For example, organized directed acyclinc graphs, pie charts for studying and downtime allocation, and maps from class to class based on time of day*"; and
+
+<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 8</a>; "*If a course is deemed terminated for a specific degree requirement, the application will notify the user, and again offer a suggested course or ability to chose a course manually.*"
+
 ### Low Fidelity Prototype
 <center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
 ### Behavior
@@ -534,15 +556,20 @@ Tap no for cancel, pop up closes and user views list of saved degree maps.
 
 <div id = "study_assistant">
 <div markdown = "1">
+
 ## Study Assistant
+
 ### Design Decisions and Rationale
-**TODO Brendan**
+
 ### Requirement from Phase 1
-**TODO Brendan**
+This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2.1 and 2.2</a>; "*The student may chat and provide details (faculty, preferred Graduating Year, number of courses per semester) to a Virtual Assistant which automatically compile a chronological sequence of semesters based on user preferences.
+Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*"
+
 ### Low Fidelity Prototype
 <center><img src = "./images/StudyAssistant.png"/></center>
+
 ### Behavior
-**TODO Brendan**
+
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -800,7 +827,7 @@ Widgets will include clickable buttons, search boxes, scrollable results section
 
 
 ### Requirement from Phase 1
-Based on Phase 1 requirement, “a parent would like to have access to course reviews, professor reviews, and past course averages to ensure that child-students get the best education possible” under <a href = "../content/phase1/2019-02-19-usabilitygoals.html" target = "_blank">Phase 1: Usability Goals - Paragraph 3 - Subparagraph 5</a>, this components meets the requirement by allowing a user to search for professor information. The user is then presented with a results page that can be sorted. The user can enter a new review, or create an entry for a professor that is not yet located within the database. Not only would parent benefit from this feature (per the Phase 1 requirement) but clearly, this component has students in mind. Although this requirement was not specifically mentioned in Phase 1, it is certainly implied.
+Based on Phase 1 requirement, “*a parent would like to have access to course reviews, professor reviews, and past course averages to ensure that child-students get the best education possible*” under <a href = "../content/phase1/2019-02-19-usabilitygoals.html" target = "_blank">Phase 1: Usability Goals - Paragraph 3 - Subparagraph 5</a>, this components meets the requirement by allowing a user to search for professor information. The user is then presented with a results page that can be sorted. The user can enter a new review, or create an entry for a professor that is not yet located within the database. Not only would parent benefit from this feature (per the Phase 1 requirement) but clearly, this component has students in mind. Although this requirement was not specifically mentioned in Phase 1, it is certainly implied.
 
 ### Low Fidelity Prototype
 <center><img src = "./images/RateMyProf.png" width = "100%" height = "100%"/></center>
@@ -839,7 +866,7 @@ Although not displayed on the prototype, a button will be available for a studen
 This component was designed with a central payment and finances hub in mind, similar to that of a mobile banking application. A quick-view text box widget will display a useful summary of user finances. The user would have access to all other Student Finances components from this central view. For that, we included four buttons at the bottom for navigation.
 
 ### Requirement from Phase 1
-Based on a requirement, “a user will be able to manage their payments to the University”, <a href = "../content/phase1/2019-02-14-introduction.html" target = "_blank">Phase 1: Introduction - Paragraph 1 last sentence</a>, the requirement implies that a student will have control over financial accounts that are linked to UVic, including tuition, and Onecard (or similar service in the case where the app isn’t at UVic). Here we show how the requirement for a payment and account utility is met by this component, and its child components "Tution and Account Balance", "ONECard Account", "Link Bank Account", and "Make Payment".
+Based on a requirement, “*a user will be able to manage their payments to the University*”, <a href = "../content/phase1/2019-02-14-introduction.html" target = "_blank">Phase 1: Introduction - Paragraph 1 last sentence</a>, the requirement implies that a student will have control over financial accounts that are linked to UVic, including tuition, and Onecard (or similar service in the case where the app isn’t at UVic). Here we show how the requirement for a payment and account utility is met by this component, and its child components "Tution and Account Balance", "ONECard Account", "Link Bank Account", and "Make Payment".
 
 ### Low Fidelity Prototype
 <center><img src = "./images/StudentSpending.png" width = "35%" height = "35%"/></center>
@@ -884,6 +911,13 @@ The top left menu bar, and top right help buttons behave in a similar manner to 
 
 
 
+
+
+
+
+
+
+
 <div id = "one_card_account">
 <div markdown = "1">
 
@@ -902,6 +936,18 @@ The only ways that this component screen differs in behavior from that of the pa
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div id = "link_bank_account">
@@ -926,60 +972,130 @@ When a uesr clicks on "Choose Financial Institution" button, a pop down menu dis
 &nbsp;<br>
 
 
+
+
+
+
+
+
+
+
+
 <div id = "make_payment">
 <div markdown = "1">
 
 ## Make Payment
 
 ### Design Decisions and Rationale
+The most important feature for this component was to draw attention to the users balance. For that, the "Balance" widget, which is a small text field, will display the current tuition and fees balance in large red text. This component does not follow a specific interface metaphor, nor does it draw inspiration from any particular source. The widgets used are pop down menus, buttons, and text fields.
 
 ### Low Fidelity Prototype
 <center><img src = "./images/MakePayment.png" width = "35%" height = "35%"/></center>
 
 ### Behavior
+The help button tooltip will display: for the top left pop down menu "the semester from which you would like to see your account balance"; for the "pay with" pop down menu "the account from which any payments made will be withdrawn".
+
+Once a user clicks the Pay With option, and fills in an amount to pay (not shown on prototype), then the "Pay" button will become active in the bottom middle of the screen. When the user clicks the button, a confirmation dialog will pop up asking the user if they wish to continue. Should the user click yes continue, the results of the payment will be displayed in the text field at the bottom of the screen (per the prototype). The receipt text field will be clickable and highlightable as well.
+
+When a user clicks the pop down menu (at top left) to select the semester, the fields Balance and Last Payment will be updated with information from that semseter. Even historial data can be viewed. Finally, the back button will take the user to the Student Finances parent component.
 
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
+
+
 
 
 <div id = "user_account">
 <div markdown = "1">
+
 ## User Account
-### Design Decisions and Rationale
+
 ### Requirement from Phase 1
+To have access to a user account was not an explicit requirement in Phase 1. However, for another requirement: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 6</a>; "*CalendarCompanion will be available in multiple languages.*" this section fulfills the requirement.
+
+### Design Decisions and Rationale
+The design for user account information was modeled after what was already present on the UVic website, with a few tweaks for extra information based on the fact that we're using a 3rd party application with it's own account housekeeping and data storage. The account information is separated into four components "Summary", "Personal", "Account", and "Preferences" but in a tab-like widget fashion in order to give the user a sense that they are not navigating away from the User Account parent component.
+
+### Requirement from Phase 1
+
+
 ### Low Fidelity Prototype
 <center><img src = "./images/UserAccount.png" width = "100%" height = "100%"/></center>
+
 ### Behavior
+The layout will be exactly as depicted in the prototype for each portion. Each tab, when clicked, will bring the user to the appropriate section. The Summary tab will display information the other three tabs. The information here will be compacted. The personal tab will display a users tombstone data such as name, preferred name, email, and SIN number (the SIN number requirement might be changed in future design because it doesn't seem necessary except for employment and tax purposes). On every tab, a user can click "update information" and then "save" once that information has been updated in order to commit the changes. The update information buttons, when clicked, will make the displayed fields turn into text entry fields populated with the current value. Once save is clicked, that data is placed back into text field form, and the data commited to the CalendarCompanion and UVic (or similar) database provided there is no conflict with the insertion. The preferences tab will allow a user to choose the CalendarCompanion color scheme, and notification options. There will be a default button which, if clicked, will update the users preferences to the factory default scheme and notification options.
+
+A language selector (not seen in the prototype) will allow a user to change the language settings of the application by clicking a language drop down menu. Although, during first initialization of the program after start up, the applicaiton should make every effort to alter the language settings automatically based on user region or phone system environment variables already pre-established.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
+
+
+
+
+
+
+
+
 
 
 <div id = "help">
 <div markdown = "1">
+
 ## Help
+
 ### Design Decisions and Rationale
+The help section here follows a similar help design and layout to many other applications. It provides general information on how to use the application, and links to a tutorial section child component as well. It is inspired by many common "help" systems of other mobile applications which include links to commonly asked questions, or descriptions of entire components. The widgets used are linked text and buttons.
+
 ### Requirement from Phase 1
+This component fulfils a requirement, specifically the requirement from <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">Phase 1: User Requirements - Paragraph 2.1 and 2.2</a> "*Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*" The help section outlined in this component of the design, can be navigated to manually, or suggested by the Virtual Assistant per the requirement specifications.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/LinkBankAccount.png" width = "35%" height = "35%"/></center>
+
 ### Behavior
+TODO Daniel
+
 </div>
 <a href = "#top">[top]</a>
 </div>
 &nbsp;<br>
 
 
+
+
+
+
+
+
+
+
 <div id = "calendar_companion_tutorial">
 <div markdown = "1">
+
 ## Calendar Companion Tutorial
+
 ### Design Decisions and Rationale
-### Requirement from Phase 1
+The inspiration for this section is based on common "tutorial" sections common in many applications. Also, if one recalls the Microsoft "Clippy" help and tutorial mascot, this tutorial component has a similar style, except without the mascot. Although Clippy was seen as annoying, his essential function is necessary to new and computer illiterate users. The widgets used are dimming overlays for when the tutorial is activated, and text bubble boxes which point to widgets in focus.
+
 ### Low Fidelity Prototype
 <center><img src = "./images/UITutorial.png" width = "100%" height = "100%"/></center>
+
 ### Behavior
+Within the Tutorial subcomponent of Help, a user will click a labeled and pre-sripted tutorial link. For example, "Tutorial: How to use the Tuition and Account Balance" section. A user would click a link, which is from a list of pre-compiled and pre-scripted tutorial links on that page (not shown in the prototype - but it's a simple list with a back button, and the top left hamburger menu and top right help button, but that's it, very simply designed). Once the tutorial link is clicked, the applicaiton will automatically navigate the user to the page upon which the tutorial is based. A bubble box will appear over a widget, button, or text entry field, telling the user what to do next. Once the user has fulfilled the task that the bubble box is telling a user to do, the tutorial will move on to the next step, repeating the process until all tutorial steps are completed. Any non-relevant widgets or components that are not the focus of the tutorial will have a transparent grey overlay in order to draw the users attention to the item of relevance.
+
 </div>
 <a href = "#top">[top]</a>
 </div>
