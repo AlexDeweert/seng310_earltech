@@ -241,42 +241,16 @@ Behavior -->
 
 ## Login Page
 
-### Design Decisions and Rationale
-&nbsp;&nbsp;&nbsp;&nbsp;The design of the login page was fairly straightforward. It's best to take advantage of the most common login page layout since most people are familar with these kinds of pages given the influx of mobile applications that require accounts in recent years. The decision to include sections such as "forgot password", "remember me", "sign up" was an easy one. These design patterns are helpful and well known. 
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Requirement from Phase 1
-&nbsp;&nbsp;&nbsp;&nbsp;This portion of the design meets an explicit requirement from Phase 1, "*Provides mobile or desktop login ability for access, creating new CalendarCompanion accounts*" at <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements - Student - Paragraph 1</a> .
 
-This component also meets two more requirements from Phase 1, <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements - Administration (and Parents or Sponsors) - Paragraph 1 for both</a> "*Administrative CourseCompanion accounts will be available for user registration.*" and "*Parent mode allows a login to the CourseCompanion usingthe student number of specified child, which allows a parent or sponsor monitor course mappings and transcripts.*"
-
-### Low Fidelity Prototype
-<center><img src = "./images/image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-The CalendarCompanion application is displayed as a splash screen while the applicaiton is loading. Once loaded, ”Welcome to CalendarCompanion, please log in!” is displayed to the user. The user is provided with two text boxes into which they will add their netlink id and password. This is done via software keyboard that pops up when a user clicks the field. A "Remember Me" checkbox below the id and password fields is available so that a user does not have to keep filling in the information after they log out or the session expires and the application is restarted.
-
-One of two things will happen after a use attempts to log in with credntials. In both cases, a dialog box will pop up telling user either that "this device will be trusted so that future logins are not required" or "credentials not recognized, redirecting to account creation page" at which point the user will be directed to an external site, which will be the sign up page on the UVic (or similar) website.
-
-This rederiction will open the preffered browser of your phone system. For example, Chrome or Safari.
-
-A "Create Account" button will be visible at the bottom of the login screen, which will lead a user who clicks it to the the "Create Account" page. Once on the create account page, the user will have see the "Virtual Assistant" AI chat bot on a bottom portion of the screen. There will be a "forgot your password" link as well, which will lead them to a password recovery screen. 
-
-Once logged in successfully, a user will be directed to the home screen which is a parent screen that displays all of the main options for the user. These options are available as buttons with descriptions, and are detailed in the following sections.
-
-Not visible in the login prototype, a Parent or Adminstration mode switch can be toggled to change the type of account that can be created or logged in to. These accounts require special permission from school administration, and proof of permission must be provided to the CalendarCompanion admin staff must activate the special account based on that proof.
-
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
 
-
-
-&nbsp;<br>
-
-
-
-
----
 
 
 &nbsp;<br>
@@ -286,28 +260,15 @@ Not visible in the login prototype, a Parent or Adminstration mode switch can be
 <div id = "course_schedule">
 <div markdown = "1">
 ## Course Schedule
-### Design Decisions and Rationale
-This is simply a landing page that one is directed to after one had clicked the "Course Schedule" button or link from the home page, or was directed here with a link provided by the Virtual Assistant. There is no specific interface metaphor that was followed for this page. The widgets present are simply links to the child pages categorized under Course Schedule. These links are submenus with descriptions titled "Future Courses", "Weekly Timetable", "Create Degree Map", and "My Degree Map".
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
 
-### Low Fidelity Prototype
-<center><img src = "./images/image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-The behavior of this component is quite simple. A user clicks one of the buttons and is directed to the appropriate link.
-
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
-
-
-&nbsp;<br>
-
-
-
----
 
 
 &nbsp;<br>
@@ -318,112 +279,33 @@ The behavior of this component is quite simple. A user clicks one of the buttons
 <div markdown = "1">
 
 ## Future Courses
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Design Decisions and Rationale
-This section was designed with question, answer, and response in mind. Once in this section, a user will be presented with two questions which will assist the application in narrowing down the correct response and routing. These questions follow an interface metaphor based on binary decision making model. While most users typically do not define their daily decisions as binary, such decisions are intuitive for most people to understand because we in fact make such decisions every day. In addition, it can be helpful to simply respond to questions that an application asks of a user and trust that it will respond in the correct way. This section will provide a user with the ability to browse the most up to date lists of future courses that UVic has to offer. This component will also provide the user with the ability to browse and look at the current online correspondence courses that UVic offers to students. 
 
-### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
-
-### Low Fidelity Prototype
-
-<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-During the process of browsing through future courses, CalendarCompanion will first query the user with two questions in order to narrow down search results resulting in less confusion due to refined results. By establishing available courses in specific sessions (Summer/Fall/Spring), and what year the user would like to take a course in, the application can rule out courses that would be otherwise unavailable. The questions are: <br>
-1. What term (Summer/ Fall / Spring) are you interested in? This is done because not all courses are offered in every tearm.<br>
-2. What year are you interested in? This is done because some courses are scheduled to be eliminated or replaced in future years. By specifying the year, the application can further narrow down the available courses to display.
-
-Following the initial questioning, users will be prompted to click a “search courses” button. This button takes the user to the page of results.
-		
-**Note**: there is a left facing arrow in the uppermost left corner of the phone screen. When clicked, the arrow will navigate uesrs to the previous menu. 	In addition, there will be a small question mark in the top right of the screen which, when clicked, opens a pop up dialog that will tell users what the left facing arrow is for.
-
-Next, the application will analyze selected queries and display a grid of faculties that students can tap on. Above the grid a message displayed will read, “Select a faculty to browse courses offered during *First query response** in the year *Second query response*.”
-
-The question mark and left facing arrow will also be present, except the question mark will explain as well that this screen is the faculty navigator/selector and that the user may tap on a faculty to see offered courses.
-
-Next, A list of courses ordered numerically from introductory to thesis level will appear alongside their respective course title. This list may be long and user will have the functionality to scroll down to browse the list. 
-
-Above the list it says “*Faculty chosen*"  courses for “*Query 1 response* ” session in "*Query 2 response.*”
-
-Again the question mark in the top right, and left facing arrow in the top left will be available. The left facing arrow will transport the user to the faculty navigator/selector. The question mark will expand to a message explaining that these are the following courses available for the faculty in the respective session and year chosen. As well, the question mark will advise the user that they can tap any course for more information.
-
-The courses displayed will have a “tap” interactive option, where users may tap on any course to discover course information such as<br>
-1. Course summary
-2. Sessions and years course is offered.
-3. Requirements (third year standing, etc)
-4. Prerequisites 
-5. Corequisites 
-6. Notable professors to teach the course and their profiles. (hyperlinked)
-7. Peer reviews of course experience. (hyperlinked)
-
-Again, users may use the upper leftmost corner to navigate back towards the list of courses available for specific faculty/session/year. However the question mark will offer tons of support, so much so that a message will appear next to the question mark on this page. The message reads important information:
-
-“This is the course of information page of *course chosen* for the *faculty chosen for *query 1* session(s) in *query 2*”
-“Please keep in mind that courses will have specific requirements. Examples range from a minimum year standing to a certain minimum mark achieved in a prerequisite course. ”
-
-After a user has tapped on a specific course, they will notice information about specific courses. Most notably, prerequisite and corequisites. 
-
-At the bottom of the scrolling list users will encounter a button widget which returns them back to the main menu. This button is titled “return”
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
 
 
 &nbsp;<br>
-
-
-
----
-
-
-&nbsp;<br>
-
 
 
 <div id = "weekly_timetable">
 <div markdown = "1">
 
 ## Weekly Timetable
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Design Decisions and Rationale
-The decision to add left and right arrows was a simple one. Most users are familiar with past times being left, and future times being right. The visible calendar combined with the calendar cells populated with course information is similar to what many students already do manually. That is, many students utilise Google calendar in order to add specific course information. Here we automate the process, so the design decision was a simple one. While the help icon is useful to advise the user what kinds of actions are available on the screen, most users of mobile devices already know that tapping on calendar cells will typically expand into a larger calendar cell widget, providing even more detailed information.
 
-### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*
-### Low Fidelity Prototype
-<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
-### Behavior
-
-Once tapped, the left uppermost corner left arrow will return a user to "Course Schedule" parent component.
-
-If the question mark icon is tapped, information relayed to the uesr will be "tap on the left and right arrows to change the date, scroll up and down to see your enrolled course lecture/lab times for the specific date. Tap on a course to set a custom notification prior to the lecture/lab"
-
-The main display will contain the date, (e.g Monday, Jan 12th 2019) per the prototype below.
-
-Left and right arrow widgets
-- Right moves date forward (Monday Jan 12th *right arrow* Tuesday Jan 13th)
-- Left moves date backwards (Monday Jan 12th *left arrow* Sunday Jan 11th)
-
-The calendar will be synchronized with courses/labs that user is currently enrolled in via UVic.
-
-Displays time slots on the calendar will depend on the time of lecture/lab for each course throughout semester duration. For each time slot the following information will be visible:
-- Course Name
-- Professor
-- Building
-- Room
-- Time slot info (Lecture/lab begin time - Lecture/lab end time)
-
-Tapping on a course will expand a pop up window that expands to provide even more course information. Also present on this pop up will be a notification system. Users can receive course notifications on their phone and choose when to receive these notifications in preferences. For example, 30 mins before lecture, 15 mins before etc. In addition, users can set these notification to occur only once for each remaining lecture for that course for the remainder of the semester.
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
-
-
-&nbsp;<br>
-
-
----
 
 
 &nbsp;<br>
@@ -434,94 +316,12 @@ Tapping on a course will expand a pop up window that expands to provide even mor
 
 ## Create a Degree Map
 
-### Design Decisions and Rationale
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills multiple requirements from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 3</a>; *"The student has the option to modify or fine tune the semesters in order to obtain the perfect schedule for each studying term..."*; and 
 
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2</a>; "*Allows student to configure desired degree map/schedule in multiple ways...*"; and
-
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 5</a>; "*By saving the desired degree schedule/map, CalendarCompanion will notify the student and remind them before course registration begins, reminding them to sign up for their respective planned term courses.*"; and
-
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 7</a>; "*If a course is full, the CalendarCompanion may recalculate the degree map, keeping time to graduation as efficient as possible.*"; and
-
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 9</a>; "*If a user accidentally deletes a course, an undo feature will be available to revert to a precious configuration.*"; and
-
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 10</a>; "*If a user deletes a pre or co-requisite to another course, a warning will be displayed to the user that the affected courses will not be available should the user continue the action. The option to revert the action will be present.*";
-
-### Low Fidelity Prototype
-<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-Upon Tapping in the uppermost left corner tap left arrow, the user will return to the Course Schedule parent component.
-
-Question Mark next to corner tap - pops up an information message: “The degree map Creator generates a degree map for you through two options...". These options are as follows:
-
-1. Generate Full Degree Map, the generator will automatically create a full degree map based on your specifications. You may edit and swap courses when your degree map is generated. Be careful! If a prerequisite for a future course is dropped, the future course will be marked red!
-
-2. Generate Pre Requisite Degree Map, the generator will create a degree map for your prerequisites and mandatory courses.
-
-The layout of the screen will adhere to the following template:
-
-Main Title: "Degree Map Creator"
-
-Quick Guide: (the following content will be centered on the screen)
-“Welcome to the degree map creator! Let the generator visually display your fined tuned future semesters! Based on your credits received, the degree map creator will generate a degree map for you to your specifications. Alternatively, let the generator build a basic schedule for your prerequisites, and then choose whatever courses peak your interest through our Future Courses Tool. You May also edit your degree map when the map is generated! If you delete any prerequisites to certain courses in your degree map, you will receive a message and courses requiring the deleted prereq will be marked red! Tap the question mark “?” to view more information”
-
-[Aesthetic bar separator]
-
-Please enter the name of your degree map
-[Text box] *user enters text here*
-
-Continue button - goes to Degree map age 2
-
-NEXT PAGE - [Link to Degree Map page 2]
-
-Uppermost left corner tap - left arrow - return to degree map page 1
-
-Question Mark next to corner tap - pops up an information message
-“please specify your intended major (or double major), your preferred number of courses per semester (or the program standard of courses per semester e.g. Engineering; 6), sessions you will be doing per year, program of minor.”
-
-Specifications [centered label, with text below but not centered]
-The following specifications along with your credits received (transmitted through UVIC database) will help fine tune your schedule and provide an optimal degree map.
-
-Intended Major?
-[Drop down menu with all available UVIC majors and double majors]
-
-Intended Minor?
-[Drop down menu with all available UVIC minors and “No” option]
-
-Preferred Courses Per semester - Checklist
-[A check box with 1-7 options aswell as a “Program standard” checkbox; allows only one box to be checked]
-
-Sessions per year
-[A check box list with Spring, Summer, Winter; allows more than one check box to checked]
-
-Type of degree map: Prerequisite or full?
-[A check box with Prerequisite, Full; allows one check box to be checked]
-
-1st most interesting elective course faculty
-[Drop down menu with all available UVIC programs]
-
-2nd most interesting elective course faculty:
-[Drop down menu with all available UVIC majors and double majors]
-
-3rd most interesting elective course faculty:
-[Drop down menu with all available UVIC majors and double majors]
-
-Button [Create then save the degree map titled *user entered degree map from page 1*]
-
-[*User named* Degree map is saved to Saved Degree Maps.]
-
-[Process] How the degree map is created under the hood:
-
-1. Takes the user/students credits that have been accumulated via UVIC database.
-
-2. If prerequisites only selected:
-    1. First calculates the prerequisites needed and starts filling degree map with missing prerequisites in most efficient way possible (multiple prereqs done at a time in order to more prereqs next semester). Students are then free to customize the degree map with core courses and electives of their choosing
-3. If full degree map selected
-    1. Fills prerequisites. After prerequisites are finished, begins filling in core and mandatory courses alongside electives. Fills the electives with minor if selected. If no minor selected, fills electives with interesting elective course faculties chosen. 
-
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -529,94 +329,29 @@ Button [Create then save the degree map titled *user entered degree map from pag
 
 &nbsp;<br>
 
-
----
-
-
-&nbsp;<br>
 
 <div id = "my_degree_maps">
 <div markdown = "1">
 ## My Degree Maps
-### Design Decisions and Rationale
-TODO
-### Requirement from Phase 1
-This component forms part of the design behavior that directly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 4</a>; "*The software then displays an intuitive design of each semester through multiple representations. For example, organized directed acyclinc graphs, pie charts for studying and downtime allocation, and maps from class to class based on time of day*"; and
 
-<a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 8</a>; "*If a course is deemed terminated for a specific degree requirement, the application will notify the user, and again offer a suggested course or ability to chose a course manually.*"
-
-### Low Fidelity Prototype
-<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-Subheader
-View, Edit or Delete your Saved Degree Maps!
-
-Title - “My Degree Maps”
-Left facing arrow in uppermost left corner to navigate back to 2.1
-Question Mark - Upon tapping has the following message
-“This is your saved Degree Maps. If no Degree maps appear, you have not created a degree map. To make one, tap the arrow in the uppermost left corner of your screen, then follow the instructions. To delete a degree map tap the degree map then click the delete button. To edit a degree map tap the degree map then click the edit button. Once you are finished editing, remember to save!”
-
-*Display of degree maps* 
-- on tap: opens a pop up, to close the pop up, hit the X in the rop right corner. To edit click edit, to delete click delete
-//If you tap delete, another pop up will appear asking if you are sure to delete or not
-Tap yes for deletion, removes the degree map
-Tap no for cancel, pop up closes and user views list of saved degree maps.
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
 
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 </div>
 <a href = "#top">[top]</a>
 </div>
 
 
 &nbsp;<br>
-
 
 
 ---
 
 
 &nbsp;<br>
-
-
-
-<div id = "study_assistant">
-<div markdown = "1">
-
-## Study Assistant
-
-### Design Decisions and Rationale
-This particular section and it's child component subsections were ones in which a lot of information would potentially be available to the user at any one time. The scrolling widget was needed for many components in order to fit it all into one location. Pop-up dialogs are very important for the reminders and alarm functions as well. No particular interface metaphor was followed here, apart from those implicit in everyday GUI design inherited from the pioneers of iOS, Android, etc and their progenitors.
-
-
-### Requirement from Phase 1
-This component and it's child components (Tests and Assignments, Study Tips and Tricks, Checklists and Todolists) form part of the design behavior that indirectly fulfills a requirement from Phase 1: <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">User Requirements, Student, Paragraph 2.1 and 2.2</a>; "*The student may chat and provide details (faculty, preferred Graduating Year, number of courses per semester) to a Virtual Assistant which automatically compile a chronological sequence of semesters based on user preferences.
-Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*" This particular requirement may be broadly interpreted. One of those interpretations may include the Virtual Assistant directing the user towards this section, which would help the user organize their semester appropriately.
-
-### Low Fidelity Prototype
-<center><img src = "./images/StudyAssistantMain.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-The main page of the study assistant provides 3 sub directories: 
-
-- Check List / To-Do List
-  - Provides a space where the student can get tasks pertaining to their courses, and make custom tasks. 
-  - A blue refresh circle will appear beside this directory if instructors have sent a new recommended task for students to do.
-- Tests and Assignments
-  - Students can view this directory to keep track of all the assignments they have currently been assigned in each course.
-  - A yellow warning symbol will appear if an assignment that has not been marked as “done” is due very soon.
-- Studying Tips and Tricks
-  - Students can visit this space to find some study tips recommended by students or by professionals.
-
-
-</div>
-<a href = "#top">[top]</a>
-</div>
-
-
-&nbsp;<br>
-&nbsp;<br>
-
 
 
 <div id = "test_reminders">
@@ -637,6 +372,8 @@ Assignments that are close to their due date have a yellow warning symbol next t
 
 At any time, the student can click on the symbol next to the assignment at this menu and mark it as done. It’s up to them to be honest. They can also revert an assignment marked as “done” back to “not done” 
 
+Contribution: Brendan Ciccone
+<br><a href = "#top">[top]</a>
 &nbsp;<br>
 &nbsp;<br>
 
@@ -647,6 +384,8 @@ At any time, the student can click on the symbol next to the assignment at this 
 The tests are below this category, and show when the test is taking place on.
 Each test or assignment can be clicked on to expand its details.
 
+Contribution: Brendan Ciccone
+<br><a href = "#top">[top]</a>
 &nbsp;<br>
 &nbsp;<br>
 
@@ -656,7 +395,8 @@ Each test or assignment can be clicked on to expand its details.
 ### Behavior (Part 3)
 Inside assignment details are more information about how the student should go about doing the assignment. These notes are provided by the instructor. Below these notes is a button that can provide a link to help. It will direct them study tips and tricks, and show tips relevant to assignments.
 
-
+Contribution: Brendan Ciccone
+<br><a href = "#top">[top]</a>
 &nbsp;<br>
 &nbsp;<br>
 
@@ -667,6 +407,7 @@ Inside assignment details are more information about how the student should go a
 ### Behavior (Part 4)
 Inside test details are more information about the test material, and where the test will be held. This is all provided by the instructor. Below these notes is a button that can provide a link to help. It will direct them study tips and tricks, and show tips relevant to preparing for tests.
 
+Contribution: Brendan Ciccone
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -687,6 +428,8 @@ Inside test details are more information about the test material, and where the 
 
 ### Behavior
 If a test or assignment is nearing its due date, an alert will appear on the users phone that tells them which assignment or test is drawing near.
+
+Contribution: Brendan Ciccone
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -715,6 +458,7 @@ Student tips are sourced from a Reddit page. Few of the top rated ones are shown
 
 Below that are tips that Earl Technologies has created based on the professional advice of successful instructors and students. Clicking on any of those will take the student to a more detailed screen where the advice is given.
 
+Contribution: Brendan Ciccone
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -745,6 +489,7 @@ If any instructor has sent a new task for a student to view, they will be sent a
 
 The black circles are tasks that the student has made themselves. They can be inside a specific course group, outside any course group, or fitted into custom groups the student can define.
 
+Contribution: Brendan Ciccone
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -780,6 +525,7 @@ There are 2 sub components that make this “Map” unique, convenient, and extr
 
 The second sub-function is the calendar symbol, which allows a user to jump between the map and the Weekly Timetable; students can check their other classes on the same day, and can easily find a route to get to the next class quite easily.
 
+Contribution: Alex Nguyen
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -813,6 +559,7 @@ This feature will be linked to a students course schedule in order to filter our
 
 A notification system will be accessible from the upper right corner of the screen which shows the user how many news articles they haven't yet read. At the bottom of the screen there will be an option available called "View Older News" which will allow a user to view older news and events entries.
 
+Contribution: Alex Nguyen
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -856,7 +603,7 @@ The professor’s name field should behave in a similar manner to the school nam
 
 The user should be able to click the search button, and the application will then display a waiting icon of some kind, after which the results screen will pop up. The results screen will simply consist of two text boxes which display any found information about the professor at that school. The user has the option to click the “search again” button, which will take the user back to the previous screen. There is also the option of clicking the main hamburger button menu at the top left.
 
-
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -895,6 +642,7 @@ A requirement from Phase 1 user profile for “Bob” states that he likes to ma
 ### Behavior
 The menu in the top left corner, when clicked, should slide out the main navigation menu that should display the main menu with submenus, similar to the <a href = "#top">"hierarchical overview"</a> section above. The two text boxes display results information of the FindMyProf search results on the parent component. The results text boxes will display information as depicted in the prototype. The text in those boxes will be clickable, and copy-able. A button on the bottom screen, if clicked, will take a user back to the FindMyProf parent component.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -943,7 +691,7 @@ Buttons at the top of the list will include: sort by button with a “sort” la
 Although not displayed on the prototype, a button will be available for a student to click titled "Post a Rating". This button will be in the bottom middle of the screen, just above the "Search Again" back button. If clicked, this button will bring a student to a new page. The new page will contain a 
 "comments" text field in the middle of the screen. Above that text box will be checkboxes that contain "tags". These tags are common attributes that are characteristic of the users experince with that particular prof. A "course taken" text field will be below the "tags" portion. This text field will contain the course number that the student had taken with that professor and on what date. There will also be a button with an uparrow and downarrow that, when clicked, will change a displayed "Rating" value to values between 1-5 in increments of 0.1. Finally, at the bottom of the screen, there will be a submit button. BEFORE SUBMITTING: The sytem MUST check to ensure that the user in question had in fact taken the course with that professor, in a time period in the past. In that way, the system avoids the ratings sytem to be overwhelmed with "troll" ratings.
 
-
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -978,6 +726,7 @@ Based on a requirement, “*a user will be able to manage their payments to the 
 ### Behavior
 The top left menu button will behave in a similar manner to the other sections. The top right help button, the question mark icon, will change make it so subsequent clicks on the other components of the user interface in this section display text which describes its functionality: if the Quickview text area is clicked then display "A summary of user finances"; if the buttons are clicked then display text which describes the function of the page that clicking the button will take the user to. The bottom buttons will be organized in a manner similar to what is observable in the prototype. A back button on the botto middle will navigate the user back to the parent component, which is the home screen.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1009,6 +758,8 @@ The navigation buttons on the bottom of this screen will persist between the par
 
 ### Behavior
 The top left menu bar, and top right help buttons behave in a similar manner to that of the parent component. Except the help button tooltip clicks will display: for the "Tuition Statement" section "Details of your UVic (or similar) tuition account"; for the "change term" button at the bottom of the Tuition Statement text field "Select the term from which to display your tuition payments summary"; for the bottom four navigation buttons, display to the user the function of the page to which the user would be taken to if the button was clicked. The buttons take the user to the component described on the button text, which is self explanatory. Finally, the back button takes the user to the parent component.
+
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1043,6 +794,7 @@ The design of this section was very similar to the parent component "Student Fin
 ### Behavior
 The only ways that this component screen differs in behavior from that of the parent component, is that the text box tooltip information for the help button changes the message displayed to the user as "Displays the most recent user activity for your one card account, including all recent transactions, deposits, and withdrawals and details like date and time of the transaction". The text in this box can be clicked, hightlighted, and copied. The button "ONECard Account" will not be inactive and unclickable since the user is already navigated to this section. Other than that, the behavior is similar to the parent component.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1077,6 +829,7 @@ The top left menu functions in a similar way to the parent and sibling component
 
 When a uesr clicks on "Choose Financial Institution" button, a pop down menu displays to user a list of links that they can click on to select their financial institution of choice. Once selected, a logo for that bank will be displayed. The users decision will be cached for future use, but not their password. A user cannot click the "Link" button unless both Account Number and Password fields are filled in. Once clicked, the Link button will begin the bank account linking process [this might require special set up and permissions from the financial institution or third party banking libraries or API]. The labels and widget positioning will be in a manner that conforms to the prototype.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1111,6 +864,7 @@ Once a user clicks the Pay With option, and fills in an amount to pay (not shown
 
 When a user clicks the pop down menu (at top left) to select the semester, the fields Balance and Last Payment will be updated with information from that semseter. Even historial data can be viewed. Finally, the back button will take the user to the Student Finances parent component.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1150,6 +904,7 @@ The layout will be exactly as depicted in the prototype for each portion. Each t
 
 A language selector (not seen in the prototype) will allow a user to change the language settings of the application by clicking a language drop down menu. Although, during first initialization of the program after start up, the applicaiton should make every effort to alter the language settings automatically based on user region or phone system environment variables already pre-established.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
@@ -1175,17 +930,12 @@ A language selector (not seen in the prototype) will allow a user to change the 
 
 ## Help
 
-### Design Decisions and Rationale
-The help section here follows a similar help design and layout to many other applications. It provides general information on how to use the application, and links to a tutorial section child component as well. It is inspired by many common "help" systems of other mobile applications which include links to commonly asked questions, or descriptions of entire components. The widgets used are linked text and buttons.
+Due to the detail and extent of this portion of the application, the following section has been compiled into an external document. Please see the following external link for details regarding this section:
 
-### Requirement from Phase 1
-This component fulfils a requirement, specifically the requirement from <a href = "../content/phase1/2019-02-19-userreqs.html" target = "_blank">Phase 1: User Requirements - Paragraph 2.1 and 2.2</a> "*Whether a user is stuck navigating through the application or is having trouble setting up a semester, the Virtual Assistant will be able to resolve any difficulties encountered.*" The help section outlined in this component of the design, can be navigated to manually, or suggested by the Virtual Assistant per the requirement specifications.
 
-### Low Fidelity Prototype
-<center><img src = "./images/Image.png" width = "35%" height = "35%"/></center>
-
-### Behavior
-TODO Daniel
+<a href = "https://github.com/AlexDeweert/seng310_earltech/blob/master/Appendix_A.pdf" target = "_blank">Primary Link: Appendix "A" </a><br>
+<a href = "https://drive.google.com/open?id=1IinoIerKQzgPTetNFFd983miKoIV7giP" target = "_blank">Alternate Link: Appendix "A" </a><br>
+Contribution: Daniel Dubichev
 
 </div>
 <a href = "#top">[top]</a>
@@ -1218,6 +968,7 @@ The inspiration for this section is based on common "tutorial" sections common i
 ### Behavior
 Within the Tutorial subcomponent of Help, a user will click a labeled and pre-sripted tutorial link. For example, "Tutorial: How to use the Tuition and Account Balance" section. A user would click a link, which is from a list of pre-compiled and pre-scripted tutorial links on that page (not shown in the prototype - but it's a simple list with a back button, and the top left hamburger menu and top right help button, but that's it, very simply designed). Once the tutorial link is clicked, the applicaiton will automatically navigate the user to the page upon which the tutorial is based. A bubble box will appear over a widget, button, or text entry field, telling the user what to do next. Once the user has fulfilled the task that the bubble box is telling a user to do, the tutorial will move on to the next step, repeating the process until all tutorial steps are completed. Any non-relevant widgets or components that are not the focus of the tutorial will have a transparent grey overlay in order to draw the users attention to the item of relevance.
 
+Contribution: Alex Deweert
 </div>
 <a href = "#top">[top]</a>
 </div>
