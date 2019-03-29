@@ -12,39 +12,48 @@ categories: phase4
 Welcome to the Evaluation portion of the CalendarCompanion application.
 
 ## Evaluation Strategy
-&nbsp;&nbsp;&nbsp;&nbsp;The main purposes of the Companion Calendar evaluation sessions are to assess the application productivity for further improvement and to discover if the interface conforms to design principles. During the evaluations, quantitative and qualitative data will be collected. Following this, the Earl Technology team will extrapolate the data to discover any common discrepancies or deviation from the original usability and UX requirements. After analyzation, the team will be able to update the Companion Calendar according the data results, fulfilling the evaluation purposes.
+&nbsp;&nbsp;&nbsp;&nbsp;The main purposes of the Companion Calendar evaluation sessions are to assess the application productivity for further improvement and to discover if the interface conforms to design principles. During the evaluations, quantitative and qualitative data will be collected. Following this, the Earl Technology team will extrapolate the data to discover any common discrepancies or deviation from the original usability and UX requirements. After analysis, the team will be able to update CalendarCompanion according the data results, fulfilling the evaluation purposes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The evaluation itself will involve observing randomly selected University of Victoria students attempting to accomplish a set list of tasks on the application via our High Fidelity prototype hosted on **Proto.io**.  Through observing the student performing tasks, our Earl Technologies team will decide if the application meets usability and user requirements for each iteration. As well, quantitative and qualitative data will be recorded during and after task completion. This data will be used in reflection to build upon any recommendations the test subject suggests. If encountered, we wish to improve on erroneous or ineffective functions mentioned in our qualitative data results. The tasks themselves will expose users to collective data about a sample university, including info about the student, institution, and courses that are available/registered by the student, through our interface. We hope to learn if our interface and organizational philosophy is effective in providing the students with useful information. 
+&nbsp;&nbsp;&nbsp;&nbsp;The evaluation itself will involve observing randomly selected University of Victoria students attempting to accomplish a set list of tasks on the application via our two High Fidelity prototypes hosted on **Proto.io**.  Through observing the student performing tasks, the Earl Technologies team will decide if the application meets usability and user requirements for each iteration. As well, quantitative and qualitative data will be recorded during and after task completion. This data will be used in reflection to build upon any recommendations the test subject suggests. If encountered, we wish to improve on erroneous or ineffective functions mentioned in our qualitative data results. The tasks themselves will expose users to collective data about a sample university, including info about the student, institution, and courses that are available/registered by the student, through our interface. We hope to learn if our interface and organizational philosophy is effective in providing the students with useful information. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;There are only three constraints that must be achieved for the Evaluation Strategy. Firstly, **Able-Bodiedness**. The student that performs the evaluation must be able-bodied. This is because our application does not currently support Voice Control. Therefore, Students participating in the evaluation must be able to operate a Desktop device with their hands in order to participate. This brings the second constraint, A Desktop or Laptop device. The application is hosted on Proto.io, which requires a Desktop or Laptop for optimal functionality. Our third constraint is Time. During our labs, we have a max time of 20 minutes for our evaluations. This means that with our time with University Of Victoria students will be limited and we will need to accomplish as much as possible within 20 minutes.
+&nbsp;&nbsp;&nbsp;&nbsp;There are only three constraints that must be achieved for the Evaluation Strategy. Firstly, **Able-Bodiedness**. The student that performs the evaluation must be able-bodied. This is because our application does not currently support Voice Control. Therefore, Students participating in the evaluation must be able to operate a Desktop device with their hands in order to participate. This brings the second constraint, **A Desktop or Laptop** device. The application is hosted on Proto.io, which requires a Desktop or Laptop for optimal functionality. Our third constraint is **Time**. During our labs, we have a max time of 20 minutes for our evaluations. This means that with our time with University Of Victoria students will be limited and we will need to accomplish as much as possible within 20 minutes.
+
+&nbsp;&nbsp;&nbsp;&nbsp; The variation in our prototypes were simple changes to the 3-bar drop down menu present on every page. Both versions are a vertical list with a descriptive name for each option (ex, Main Menu, Help, User Account, etc.).
+
+Variant A :
+
+Each option in the vertical list has a unique black icon on the right side of the bar.
+
+Variant B:
+
+Each option EXCEPT for “Study Assistant” and “Main Menu” Have the unique black icons on the right side of the bar.
+
+Our theory behind this is that if we want a simple way for the options that we think might be used the most, (In this case we chose “Study Assistant” and “Main Menu”) to better stand out, they are devoid of an icon, so they are different enough to attract a users attention at first glance. Those two options are also spaced 4-options apart so the pattern follows: 4 icons, no icon
 
 ## Evaluation Plan
-&nbsp;&nbsp;&nbsp;&nbsp;After extensive research, the Earl Technologies team to display the evaluation plan by answering a series of questions. These key questions will answer all possible questions and concerns about the plan. The questions, Why, Who, How, What, Where, and When are categorized below:
+&nbsp;&nbsp;&nbsp;&nbsp;The following is the Why, Who, How, What, Where, and When of our evaluation plan:
 
 ### Why
-&nbsp;&nbsp;&nbsp;&nbsp;As stated in the Evaluation Strategy, the evaluation is to obtain criticism for our application. After the users complete the tasks, By asking quantitative and qualitative questions, we are able to assess the application productivity for further improvement and discover if the interface conforms to design principles from the answers. We are trying to answer if there any overall discrepancies in our application design or if there may be any improvements made.
+&nbsp;&nbsp;&nbsp;&nbsp;As stated in the evaluation strategy, the general idea is to obtain a form of criticism for our application, and see if the changes across Variants A and B affect user performance. After the users complete the tasks, answers to the qualitative and quantitative questions will provide our development team with some metric by which to make improvements. Essentially, we are trying to ascertain if there any design discrepancies conflict with the desired user experience.
 
 ### Who
-&nbsp;&nbsp;&nbsp;&nbsp;According to the evaluation plan, you may also perform the evaluation with one single user, to achieve a more interpersonal evaluation. However, during the lab evaluations/presentations, multiple users will be evaluating the application at once. To manage this, during the introduction of our presentation, a team member will distribute a consent form to each student in the lab. Signing this consent form indicates that the student will participate in the evaluation. To compensate multiple evaluations at once, evaluations will be grouped by rows in the computer laboratory. An Earl Technology team member will be present in each row, overviewing the evaluation process, answering any questions. 
+&nbsp;&nbsp;&nbsp;&nbsp;The evaluation may be performed on either a single users, or many simultaneously. A team member will distribute a consent form any participating student in the lab. Signing this consent form indicates that the student will participate in the evaluation and that they are aware of the implications of doing so.
 
 ### What
-&nbsp;&nbsp;&nbsp;&nbsp;We intend on evaluating very fundamental tasks of our application based on user requirements. Tasks involve navigating to different features and interacting with them respectively. For example, we will ask the user to Navigate to the CSC100 Course Information page under the Future Courses feature. Doing this, users will need to record the time and amount of clicks it took to achieve this task. Quantitatively, we expect users to record how many clicks were needed and how much time was needed to interact with different widgets. Qualitatively, a task we wish users to complete is to give us feedback and/or recommendations on the application. 
+&nbsp;&nbsp;&nbsp;&nbsp;We intend on evaluating fundamental tasks of our application based on user requirements stated in previous phases. Tasks involve navigating to different features and interacting with them respectively. For example, we will ask the user to Navigate to the CSC100 Course Information page under the Future Courses feature. Quantitatively, we will monitor each user taking part in the evaluation and will record how many clicks were required, and how much time was needed to complete each task. Qualitatively, users will be asked to provide feedback and/or recommendations based on their experiences.
 
 ### How
-&nbsp;&nbsp;&nbsp;&nbsp;The evaluation will be a study in regards to discovering any inefficient implementations in our design, and to further overall greatly benefit the productivity of our application. This will be performed through a Usability Study in regards to our application. Users will answer qualitative and quantitative questions on the back side of the Consent Form. The answers we receive are intended to enlighten us on any features which could use improvement. Furthermore, usability will be assessed based on our established usability requirements from the early Companion Calendar developmental stages. The usability data is mostly gathered from our qualitative data collection questions. We will interpret quantitative data from taking the averages of task completion time, and further investigating if any tasks may be optimized for user performance.
+&nbsp;&nbsp;&nbsp;&nbsp;The evaluation facilitates discovery of inefficient implementations in our design. In addition, it serves to benefit the productivity of users who will utilize the application. Users will answer qualitative and quantitative questions provided to them in person by a facilitator. The answers received are intended to enlighten the design team on any features which could use improvement. Furthermore, usability will be assessed based on previously established usability requirements. The usability data is mostly gathered from qualitative data collection questions which will then be used to change the application as necessary.
 
-### Where
-&nbsp;&nbsp;&nbsp;&nbsp;Interestingly enough, the evaluation is made to unroll in a Computer Science Lab. However, this evaluation may be performed anywhere as long as each student is provided with a Laptop/Desktop computer and internet connection. This is because the introduction, evaluation and conclusion is performed with a script, so as long as an Earl Technology team member is present along with a consent form, the evaluation may be performed!
-
-### When
-&nbsp;&nbsp;&nbsp;&nbsp;Intended to be evaluated during the tutorial section of Software Engineering 310, But realistically, anytime (See Where).
+### Where and When
+&nbsp;&nbsp;&nbsp;&nbsp;The evaluation can take place anywhere. However, at this phase of design, the evaluation will take place in the Engineering Lab Wing, room B220 on March 18th, 2019 between 4:30 p.m to 6:00 p.m.
 
 ## Consent Form
 [See bottom]
 
-### Task Description
-&nbsp;&nbsp;&nbsp;&nbsp;Users will be asked to perform a series of task and record how much time and how many clicks it took to perform each task. Users will have approximately 10 minutes to complete all the tasks and write down all the data on the back of the consent form. The tasks are displayed on the projector in front of the class one at a time, then followed by a screen 
+### Task Descriptions
 
+Users will attempt to:<br>
 1. Log in as a student.
 2. Discover one assignment or test and it’s brief details from the Study Assistant.
 3. Find one school event that you might be interested in given what’s available in any of the screens that advertise such.
@@ -53,97 +62,52 @@ Welcome to the Evaluation portion of the CalendarCompanion application.
 6. Find CSC100 On the future courses pages.
 7. Sign out.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Once all tasks are completed and quantitative data is recorded (How long it took to achieve a certain task, how many clicks were needed) users will be asked to answer the qualitative questions, which ask the user mostly for recommendations and any issues they had within application usage.
-
 ## Facilitators Script
-Daniel: Students, Assistants and professor, Greetings! My name is Daniel Dubichev, co-CEO of Earl Technologies. Today, I am joined with three other co-CEO’s
+Facilitator: Greetings! My name is __________, a representative of Earl Technologies. 
 
-Brendan: My name is Brendan Ciccone, co-Ceo
-Alex N: My name is Alex Nguyen, co-Ceo
-Alex D: My name is Alex Deweert, I am also a co-Ceo
+I’d would like to thank you for attending today. We are gathered to evaluate Earl Technologies latest and greatest product: The CalendarCompanion. 
 
-Daniel: First, we would like to thank you all for attending today. We are gathered to evaluate Earl Technologies latest and greatest product 
+Earl Tech has implemented an effective new application providing a user friendly interface with the notorious UVIC CourseSpaces website and most of its underlying functionality. We believe that this application is much more effective than its predecessor. We would like to confirm our beliefs through an evaluation with yourselves evaluating the application.
 
-*change slide*
+Before we get started, please consider this consent form for the evaluation :
+
+*hand out consent form(s)*
+
+Facilitator: We would like to inform you this information is not mandatory whatsoever. However,  if you would like to participate in this evaluation, please sign the consent form.
+
+*If the student(s) signed the consent form, begin evaluation below*
 
 
-Daniel: -The Companion Calendar. 
-Together, we have implemented an effective new application to redesign the UVIC Website and most of its functionalities. We believe our version is much more effective than its predecessor, and would like to confirm this through an evaluation with yourselves evaluating the application. 
+*Otherwise, end the evaluation for the particular students and ask them to leave.*
 
-*change slide*
-*Alex D.*: In our class slack, the link to our prototype has now been posted. It is under the #general channel and when clicked it will redirect. It is also displayed on the projector screen here if you’d like to manually type it in. (Important): Once at the login page, do not log in, as we must have all users on the same page.
+Facilitator: Once you’ve signed the consent form, flip the page to see a list of tasks along with questions about that task. For each task, we will have it displayed on the screen, and we will attempt one task at a time to ensure all participants are up to date. 
 
-*start handing out consent forms*
+I’d like to bring your attention to the screen in front of you with the proto.io page open. You should see a login screen to our app. We will begin shortly.
 
-*Alex N.*: During this period, we’d like to aswell distribute the consent forms for the evaluation. We would like to inform you this information is not mandatory whatsoever, and you are currently being passed around consent forms. If you would like to participate in the evaluation, please sign the consent form.
+For each task being evaluated, there will be a timer on the projected screen so that you may mark down the time it took for you to accomplish said task. 
 
-*Daniel*: Once you’ve signed the consent form, flip the page to see a list of tasks along with questions about that task. For each task, we will have it displayed on the screen, and we will attempt one task at a time to ensure all participants are up to date. 
+Aswell, we would like you to mark down how many taps or clicks it took you to accomplish a task, to see the average speed of task completion.
 
-*Someone*: Furthermore, for each task being evaluated, there will be a timer on the projected screen so that you may mark down the time it took for you to accomplish said task. 
+If you require any assistance, please do not hesitate to ask. Before we begin are there any questions?
 
-*Someone*: Aswell, we would like you to mark down how many taps or clicks it took you to accomplish a task, to see the average speed of task completion. 
+*Answer questions as necessary*
 
-*Daniel*: We are finally ready to begin the evaluation. Please note that each row in the classroom has its own co-Ceo if you require any assistance. Before we move on the next task, each co-Ceo will signal that their row is finished. Before we begin are there any questions?
+Facilitator: Just a reminder,If you’ve signed the consent form, please remember to mark down how many clicks it took to accomplish the task, as well as the time it took by referring at the screen!
 
-*CO-CEOS take positions as facilitators in each row*
-*Everyone*: Answers questions
-
-*Daniel*: Just a reminder,If you’ve signed the consent form, please remember to mark down how many clicks it took to accomplish the task, as well as the time it took by referring at the screen!
 Here we Go! The first task is to:
 
-*Change Slide*:
+Log In as a student. You may begin in 3..2...1… start! 
 
-*Daniel*: Log In as a student. You may begin in 3..2...1… begin! 
+*timer Starts*
 
-*Brendan*: Logging is in a very important feature, in fact we have three different variants of the Companion Calendar, Student, Teacher and Administration. However, since most of you are students, we will ask you to do the student login
+*User completes tasks as they are able to, and write down their times and clicks for each*
+*Remind the user if they ask what task they are to do next. Do not give any hints as to how the user should accomplish each task*
 
-*Daniel*: Once each row is done, a fellow co-Ceo will give me a signal and once all rows are done ill move to the next 
+*When all tasks are completed:*
 
-*Change Slide*
+Facilitator: Now that you have completed all of the tasks we will move to part two of the evaluation, the qualitative questionnaire. It is located under the quantitative data section of your form. If needed, don’t hesitate to ask for help. Furthermore, once you are done, we will collect your sheet(s).
 
-*Daniel*: The second task is to discover one assignment or test and it’s brief details from the Study Assistant. The timer begins in 3...2...1..begin!
-
-*Brendan*: We’ve integrated an agenda like application in our application for you to stay on top of your work at all times. There are numerous methods to get to this screen, feel free to think aloud with some group members on what you think is the quickest
-
-*Receives Signals from Co-Ceo’s indicating row completion*
-*Change Slide*
-*Daniel*: Find one school event that you might be interested in from any of the screens that advertise such. 3, 2, 1, BEGIN!
-
-
-*Alex D.*: With school events being difficult to view in the current UVIC Mobile application, we’ve redesigned our application to showcase the University’s events in multiple fashions. There are a few different ways to get to the events page. Feel free to discuss which one is your favorite!
-
-
-*co-CEO’s signal that the rows are complete*
-*Change Slide*
-
-*Daniel*: Next up, is to find the latest finance/bill that has been paid from the Student Finances page
-
-*Alex N.*: As we now in our modern world, finances are quite important to track, venture to the Student Finances page to discover a paid Finance Bill!
-
-*co-CEO’s signal that the rows are complete*
-*Change Slide*
-
-*Daniel*: Find office hours and ratings for Professor FooBar at Uvic in the Find my Prof page
-
-*Up for grabs*: Tired of always looking around on your course outline for the office hours? No need! Our application integrates live feed office hours for every professor as well as a direct RateMyProfessor system!
-
-*co-CEO’s signal that the rows are complete*
-*Change Slide*
-
-*Daniel*: Find CSC100 On the future courses pages. Currently as our app is in it’s high fidelity prototype stage, we have one course available from our future courses page; Track how many clicks and time it takes to get to CSC100 via our Future Courses feature on the Course Schedule menu.
-
-*co-CEO’s signal that the rows are complete*
-*Change Slide*
-
-*Daniel*: Finally, our last task, Signing out
-
-*Change Slide*
-
-*Daniel*: And with that, we have completed our task evaluations. Now we shall move to part two of the evaluation, the qualitative questionnaire. It is located under the quantitative data section. If needed, all CEO’s will be on the floor to provide help with these questions. Don’t hesitate to ask for help. Furthermore, once you are done, notify a CEO and we will collect your sheets.
-
-*change to thank you slide*
-
-*All of us at front of lab*: thank you so much and have an amazing day!
+Thank you so much, we appreciate your time and participation and have an amazing day!
 
 ## Cognitive Walkthrough
 ### Tasks
@@ -191,10 +155,10 @@ Here we Go! The first task is to:
       3. Will a user recognize the action as the correct one? Yes
       4. Will the user understand feedback? Yes, the user will be taken to the correct screen with the results.
    5.  User is presented with the details of the SENG 265 assignment 4.
-      5. Is the effect of the current action the same as the user’s goal? Yes
-      6. Is the action visible? Yes
-      7. Will a user recognize the action as the correct one? Yes
-      8. Will the user understand feedback? Yes
+       1. Is the effect of the current action the same as the user’s goal? Yes
+       2. Is the action visible? Yes
+       3. Will a user recognize the action as the correct one? Yes
+       4. Will the user understand feedback? Yes
    <p/>
 
 3. **Find one school event that you might be interested in given what’s available in any of the screens that advertise such**
@@ -214,10 +178,10 @@ Here we Go! The first task is to:
       3. Will a user recognize the action as the correct one? Yes, if the user knows they are actively looking for an interesting item under School Events.
       4. Will the user understand feedback? Yes
    4.  User clicks the “Read more” button on the interesting looking article.
-      5. Is the effect of the current action the same as the user’s goal? Yes
-      6. Is the action visible? Yes
-      7. Will a user recognize the action as the correct one? Yes
-      8. Will the user understand feedback? Yes: the feedback provided is they content that they were originally looking for.
+       1. Is the effect of the current action the same as the user’s goal? Yes
+       2. Is the action visible? Yes
+       3. Will a user recognize the action as the correct one? Yes
+       4. Will the user understand feedback? Yes: the feedback provided is they content that they were originally looking for.
    <p/>
 4. **Find the latest finance/bill that has been paid from the Student Finances page**
    1. From any screen with the main menu button, user clicks on the main menu
@@ -285,10 +249,10 @@ Here we Go! The first task is to:
    <p/>
 6.  **Find CSC100 On the future courses pages.**
     1.  From any screen with the main menu button, user clicks on the main menu
-      1. Is the effect of the current action the same as the user’s goal? No: This is an intermediate step towards the goal.
-      2. Is the action visible? Yes
-      3. Will a user recognize the action as the correct one? Yes
-      4. Will the user understand feedback? Yes: The result of the interaction is that the main menu will pop out.
+        1. Is the effect of the current action the same as the user’s goal? No: This is an intermediate step towards the goal.
+        2. Is the action visible? Yes
+        3. Will a user recognize the action as the correct one? Yes
+        4.  Will the user understand feedback? Yes: The result of the interaction is that the main menu will pop out.
     2.  User clicks the main menu item “Course Scheduler”
         1. Is the effect of the current action the same as the user’s goal? No: This is an intermediate step towards the goal.
         2.  Is the action visible? Yes
@@ -319,23 +283,22 @@ Here we Go! The first task is to:
         2.  Is the action visible? Yes
         3.  Will a user recognize the action as the correct one? Yes
         4.  Will the user understand feedback? Yes
-        5.  User clicks “CSC 100” from a list of future courses
-        6.  Is the effect of the current action the same as the user’s goal? Yes
-        7.  Is the action visible? Yes
-        8.  Will a user recognize the action as the correct one? Yes
-        9.  Will the user understand feedback? Yes
-   <p/>
-7. **Sign out**
-   1.  From any screen with the main menu button, user clicks on the main menu
-       1. Is the effect of the current action the same as the user’s goal? No: This is an intermediate step towards the goal.
-       2. Is the action visible? Yes
-       3.  Will a user recognize the action as the correct one? Yes
-       4.  Will the user understand feedback? Yes
-   2.  User clicks the main menu item “sign out”
-       1. Is the effect of the current action the same as the user’s goal? Yes
-       2.  Is the action visible? Yes
-       3.  Will a user recognize the action as the correct one? Yes
-       4.  Will the user understand feedback? Yes
+    8.  User clicks “CSC 100” from a list of future courses
+        1.  Is the effect of the current action the same as the user’s goal? Yes
+        2.  Is the action visible? Yes
+        3.  Will a user recognize the action as the correct one? Yes
+        4.  Will the user understand feedback? Yes
+7.  **Sign out**
+    1.  From any screen with the main menu button, user clicks on the main menu
+        1. Is the effect of the current action the same as the user’s goal? No: This is an intermediate step towards the goal.
+        2. Is the action visible? Yes
+        3.  Will a user recognize the action as the correct one? Yes
+        4.  Will the user understand feedback? Yes
+    2.  User clicks the main menu item “sign out”
+        1. Is the effect of the current action the same as the user’s goal? Yes
+        2.  Is the action visible? Yes
+        3.  Will a user recognize the action as the correct one? Yes
+        4.  Will the user understand feedback? Yes
 
 ### Goals for Quantitative Results
 We will gather the time it takes to perform one action which is based on each task in the cognitive walkthrough. In addition, we will also determine the number of clicks that the user makes in order to achieve the task. A stopwatch will be used to time the action. The clicks will simply be counted by a test administrator.
@@ -354,7 +317,7 @@ We will gather the time it takes to perform one action which is based on each ta
 
 **Task G**: Sign Out
 
-### Quantitative Results
+### Quantitative Results for our in-lab participator (Test Subject-1) - Variant A
 **Task A** 5s, Min required: 4 clicks, Actual: 4 clicks
 **Task B** 25s, Min required: 5 clicks, Actual: 5 clicks
 **Task C** 6s, Min required: 4 clicks, Actual: 3 clicks
@@ -363,29 +326,64 @@ We will gather the time it takes to perform one action which is based on each ta
 **Task F** 30s, Min required: 9 clicks, Actual: 11 clicks
 **Task G** 5s, Min required: 2 clicks, Actual: 2 clicks
 
+### Quantitative Results for our in-lab participator (Test Subject-2) - Variant B
+**Task A** 6s, Min required: 4 clicks, Actual: 4 clicks
+**Task B** 16s, Min required: 7 clicks, Actual: 5 clicks
+**Task C** 6s, Min required: 3 clicks, Actual: 3 clicks
+**Task D** 11s, Min required: 5 clicks, Actual: 3 clicks
+**Task E** 24, Min required: 9 clicks, Actual: 12 clicks
+**Task F** 34s, Min required: 13 clicks, Actual: 11 clicks
+**Task G** 7s, Min required: 2 clicks, Actual: 2 clicks
+
 ### Qualitative Questions
 
-**Structured**: Was there anything that you found frustrating while interacting with the user interface of the CalendarCompanion application?
+**1) [Structured]**: Was there anything that you found frustrating while interacting with the user interface of the CalendarCompanion application?
+
+**2) [Unstructured]**: What was your overall opinion of the application following the completion of the tasks?
+
+**Answers of “Test Subject-1” (Variant A)**
+
+**1)**: User reported no frustrations - (“Nah”)
 
 
-**Unstructured**: What was your overall opinion of the application following the completion of the tasks?
+**2)**: User reported: “It was fine -- I had a fine time” and later added: “completion of the tasks were easy”
 
-**Answers of “TestSubjectOne”**
+**Answers of “Test Subject-2” (Variant B)**
 
-**Structured**: Was there anything that you found frustrating while interacting with the user interface of the CalendarCompanion application?
-
-“User reported no frustrations”
+**1)**: User reported: “Not really, but the logging in screen seemed kinda klunky”
 
 
-**Unstructured**: What was your overall opinion of the application following the completion of the tasks?
-
-“User had a fine time. Reported that completion of the tasks were easy”
+**2)**: User reported: “It felt very nice, using the drop down menu to get pretty much everywhere was good. I did make a few mistakes, but that was probably just my bad.”
 
 
 **Summary of Result**s
-The quantitative results showed that our design is intuitive and easy to navigate. Nearly all of the cognitive tasks that were required were completed by the user in the minimum number of clicks required. In terms of time taken, the time to navigate the menus, button clicks, and labels was slightly higher than what we expected. However, such times are to be expected after someone’s first exposure to a new user interface.
+The quantitative results showed that our design is intuitive and easy to navigate. Nearly all of the cognitive tasks that were required were completed by the users in the minimum number of clicks required. In terms of time taken, the time to navigate the menus, button clicks, and labels was slightly higher than what we expected. However, such times are to be expected after someone’s first exposure to a new user interface.
 
-The qualitative results were surprisingly positive. The test subject did not express any displeasure following the completion of tasks A through F.
+The qualitative results were surprisingly positive. The test subjects did not express any major displeasure following the completion of tasks A through F, although Subject 2 did point out the Log-in screen felt a little off.
+
+Comparing the results of Variant A and Variant B, we don’t have enough results to fairly compare our data, as we only have 2 participants. However, While facilitating, we noticed that Subject 2, had a slightly faster time completing Task B. Which may be because the option from the drop-down menu to get to the Study Assistant had no icon, unlike all the others, which may have made it easier to find.
 
 **Design Recommendation**
-We found that our design was inconsistent in terms of “back” button functionality. Sometimes, if a user mis-clicked, they would be required to click on the main menu again, starting over from the beginning of the cognitive task. Many pages do have back buttons, but the buttons themselves are either in different locations (inconsistent spatial location from page to page), or they do not exist all together. The recommendation would be to overhaul the back button functionality, making it more consistent across all pages.
+Paying attention to our participants, we found that our design was inconsistent in terms of “back” button functionality. Sometimes, if a user mis-clicked, they would be required to click on the main menu again, starting over from the beginning of the cognitive task. Many pages do have back buttons, but the buttons themselves are either in different locations (inconsistent spatial location from page to page), or they do not exist all together. The recommendation would be to overhaul the back button functionality, making it more consistent across all pages. On top of that, perhaps we should keep with Variant B’s design, and have some drop-down menu options devoid of icons so they are easier to locate.
+
+## Consent Form
+EARL TECHNOLOGIES - User Testing Consent Form.
+
+User Testing Informed Consent Form
+Study administrator is:    _______________________________<br>
+Participant is:    _______________________________<br>
+Participant number:    _______________________________<br>
+
+This is a study about User Interface intended for people who are students at a university. Our goal is to make the mobile app appealing, intuitive and user friendly. Your participation will help us achieve this goal.
+
+In this session you will be working with a working prototype. We’ll ask you to perform tasks a typical user might do, such as managing student finance, viewing assignments. A member of the design team will sit in the same room, quietly observing and taking notes. A facilitator will sit near you and help you if you are stuck or have questions.
+
+All information collected in the session belongs to the company and will be used for internal purposes. We will not videotape or audiotape the session. We may publish our results from this and other sessions in our reports, but all such reports will be confidential and will not include your name.
+
+This is a test of the software. We are not testing you. We want to find out what aspects are confusing, so we can make it better. You may take breaks as needed and stop your participation in the study at any time.
+
+Statement of Informed Consent
+
+I have read the description of the study and of my rights as a participant. I voluntarily agree to participate in the study.
+
+Signature of Participant:  ____________________________
